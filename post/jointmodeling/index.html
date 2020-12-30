@@ -826,18 +826,18 @@
 <p>In this section, we will introduce the three models that we reviewed, we also focused on the differences between the three models and the advantages and disadvantages of the three models.</p>
 <h3 id="21-time-dependent-covariates-cox-models">2.1 Time dependent covariates Cox models</h3>
 <p>Before introducing the time-dependent covariates cox model, we want to refresh our memory on the proportional hazard model (cox model), which we define the hazard function as</p>
-<p>$$\lambda(t|Z) = \lambda_0(t)\exp{\beta&rsquo; Z} $$</p>
-<p>where the baseline hazard $\lambda_0(t)$ depends on time $t$ but not depends on the covariates $Z$ and the hazard ratio $e^{\beta&rsquo; Z}$ depends on covariates $Z$ but not depends on time $t$.</p>
+<p>$$\lambda(t|Z) = \lambda_0(t)\exp{\beta' Z} $$</p>
+<p>where the baseline hazard $\lambda_0(t)$ depends on time $t$ but not depends on the covariates $Z$ and the hazard ratio $e^{\beta' Z}$ depends on covariates $Z$ but not depends on time $t$.</p>
 <p>There are cases where if we measure some of the $Z_j$ over time, they may vary ( e.g. biomarkers)<br>
 Often time, a small fraction of the available biomarker information is used.
 One example that motivated the time depends covariates cox model is the Stanford Heart transplant example, where a standard cox model was initially fit without consideration on the time-dependent covariate waiting time to get transplants which can be an important both in inference and prediction, the patients get the transplant earlier might have a higher survival probability due to the better condition of the early-stage patients.</p>
 <p>When we have such time-dependent covariates, we might want to modify the cox model so that it can take account for the time-dependent effect on the measured biomarkers. We can rewrite the hazard function where the exponential part was expressed by a linear combination of the covariates that depends on time:</p>
-<p>$$\lambda(t) = \lambda_0(t)\exp{\beta&rsquo; Z(t)}$$</p>
+<p>$$\lambda(t) = \lambda_0(t)\exp{\beta' Z(t)}$$</p>
 <p>it looks like a tiny modification, but it has a different meaning when looking at what do these two models measure.</p>
 <p>for the cox model, we are comparing the survival distributions between those patients with different treatment. However, for the time-dependent covariates cox model, we are actually comparing the risk of an event between transplant and non-transplant at each event time, but we re-evaluated each person based on whether they had had a transplant by that time.</p>
 <p>Inference proceeds similarly to the Cox model (time-independent), the only difference is that the values of Z now changes at each risk set.
 We can calculate the partial likelihood as follow:</p>
-<p>$$\mathcal{L}(\beta) = \prod_{i=1}^n \frac{\exp{\beta Z_i(T_i)}}{\sum_{j \in \mathcal{R}(t_i)(\beta&rsquo; Z_j(T_i) }}\delta_i$$</p>
+<p>$$\mathcal{L}(\beta) = \prod_{i=1}^n \frac{\exp{\beta Z_i(T_i)}}{\sum_{j \in \mathcal{R}(t_i)(\beta' Z_j(T_i) }}\delta_i$$</p>
 <p>However, one important feature for the time dependents covariates model is that the external covariates are more appropriate for the model compared to the internal covariates. To be specific, we want the covariates depends on time but not depends on the failure to be included in the time-dependent covariates cox model instead of the covariates that we cannot observe or dependents on the failure of the patients.</p>
 <h3 id="22-joint-models-with-longitudinal-process-and-survival-process">2.2 Joint Models with longitudinal process and survival process</h3>
 <p>To account for the special features of internal covariates, joint models for longitudinal and time-to-event data have been developed.</p>
@@ -854,10 +854,10 @@ $$S_j{t |\mathcal{M}_i(t, b_j), \theta} = \exp{\int_0^t h_0(s)\exp{\gamma^T w_j 
 <p>The joint likelihood function is:
 $$p(y_j, T_i, \delta_i) = \int p(y_i|b_i){h(T_i|b_i)^{\delta_i}S(T_i|b_i)}p(b_i)db_i $$
 The likelihood of the model is derived under the conditional independence assumptions that given the random effects, both longitudinal and event time process are assumed independent, and the longitudinal response of each subject are assumed independent.</p>
-<p>Estimation of the joint models&rsquo; parameters can be based either on maximum likelihood or a Bayesian approach using Markov chain Monte Carlo (MCMC) algorithms.</p>
+<p>Estimation of the joint models' parameters can be based either on maximum likelihood or a Bayesian approach using Markov chain Monte Carlo (MCMC) algorithms.</p>
 <p>We can also use the joint model to do dynamic prediction, using the covariates recorded up to time $t$, we can predict the survival probability $\pi(u|t)$ at time $u$ where $u&gt;t$
 $$\pi(u|t) = \Pr(T_j^* \ge u | T_j^* &gt; t, y_j(t), D_n)$$
-Where $T_j^*$ is the true event time for subject $j$, and $D_n$ is the set ${T_i, \delta_i, y_i }$. Meanwhile, when we have new information at time $t&rsquo; &gt; t$, we can update to obtain $\pi_j(u|t&rsquo;)$</p>
+Where $T_j^*$ is the true event time for subject $j$, and $D_n$ is the set ${T_i, \delta_i, y_i }$. Meanwhile, when we have new information at time $t' &gt; t$, we can update to obtain $\pi_j(u|t')$</p>
 <h3 id="23-landmarking">2.3 Landmarking</h3>
 <p>Landmarking can also provide the survival probability $\pi_j(u|t)$ for patient $j$ with resetting the time to zero being the landmarking time.</p>
 <p>$$h_i(u) = \lim_{\Delta t \rightarrow 0}\frac{1}{\Delta t}\Pr(u \le T_i^*&lt;u + \Delta t | T_i^* \ge u$$</p>
@@ -940,7 +940,7 @@ for the longitudinal process, and $M_1$, $M_2$, $M_3$ for the survival process:<
 $$y_i(t) = \beta_1Trt0_i + \beta_2Trt1_i + beta_3(t\times Trt0_i) + \beta_3(t \times Trt1_i) + \epsilon_i(t)$$
 and used survival model as follow to simuate the survival porcess:</p>
 <p>$\textbf{Scenario I:} \hspace{2mm} h_i(t) = h_0(t)\exp {\gamma_1Trt1_i + \alpha_1m_i(t) }$a
-$\textbf{Scenario II:} \hspace{2mm} h_i(t) = h_0(t)\exp {\gamma_1Trt1_i + \alpha_1m_i(t) + \alpha_2m&rsquo;_i(t)}$
+$\textbf{Scenario II:} \hspace{2mm} h_i(t) = h_0(t)\exp {\gamma_1Trt1_i + \alpha_1m_i(t) + \alpha_2m'_i(t)}$
 $\textbf{Scenario III:} \hspace{2mm} h_i(t) = h_0(t)\exp {\gamma_1Trt1_i + \alpha_1\int_0^tm_i(s)ds }$</p>
 <h2 id="6-results">6. results</h2>
 <p>Joint modeling approaches outperform the landmark approaches when there is no misspecification on the time effect on the longitudinal process.
