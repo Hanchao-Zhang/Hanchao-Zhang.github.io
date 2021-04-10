@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hanchao Zhang | Hanchao Zhang (张瀚潮)</title>
+    <title>Hanchao Zhang | Hanchao Ted Zhang (张瀚潮)</title>
     <link>https://hanchao-zhang.github.io/author/hanchao-zhang/</link>
       <atom:link href="https://hanchao-zhang.github.io/author/hanchao-zhang/index.xml" rel="self" type="application/rss+xml" />
     <description>Hanchao Zhang</description>
@@ -11,6 +11,15 @@
       <title>Hanchao Zhang</title>
       <link>https://hanchao-zhang.github.io/author/hanchao-zhang/</link>
     </image>
+    
+    <item>
+      <title>Hanchao Zhang</title>
+      <link>https://hanchao-zhang.github.io/author/hanchao-zhang/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hanchao-zhang.github.io/author/hanchao-zhang/</guid>
+      <description>&lt;p&gt;Hanchao Zhang is a second year Ph.D. student in the Biostatistics Division at Department of Population Health, Sackler institute of Biomedical Sciences, Grossman School of Medicine, New York University.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Liver damage, gastrointestinal symptoms and severity of disease in COVID-19</title>
