@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Statistical Inference II | Hanchao Ted Zhang (张瀚潮)</title>
+    <title>Statistical Inference II | Hanchao Zhang (张瀚潮)</title>
     <link>https://hanchao-zhang.github.io/courses/statistical-inference-ii/</link>
       <atom:link href="https://hanchao-zhang.github.io/courses/statistical-inference-ii/index.xml" rel="self" type="application/rss+xml" />
     <description>Statistical Inference II</description>
