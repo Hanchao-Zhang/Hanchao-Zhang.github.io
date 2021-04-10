@@ -1,262 +1,190 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
+    <loc>https://hanchao-zhang.github.io/courses/statistical-inference-i/_index-2/</loc>
+    <lastmod>2019-09-09T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://hanchao-zhang.github.io/courses/statistical-inference-i/</loc>
     <lastmod>2019-09-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hanchao-zhang.github.io/courses/statistical-learning/</loc>
+  </url><url>
+    <loc>https://hanchao-zhang.github.io/coursess/statistical-inference-i/</loc>
     <lastmod>2019-09-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://hanchao-zhang.github.io/coursess/statistical-learning/</loc>
+    <lastmod>2019-09-09T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://hanchao-zhang.github.io/courses/statistical-inference-ii/</loc>
     <lastmod>2020-01-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://hanchao-zhang.github.io/coursess/statistical-inference-ii/</loc>
+    <lastmod>2020-01-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hanchao-zhang.github.io/others/hero-2/</loc>
+  </url><url>
     <loc>https://hanchao-zhang.github.io/others/hero/</loc>
-  </url>
-  
-  <url>
-    <loc>https://hanchao-zhang.github.io/courses/biostatistics-i/</loc>
-    <lastmod>2010-09-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://hanchao-zhang.github.io/others/home-2/</loc>
+  </url><url>
     <loc>https://hanchao-zhang.github.io/others/home/</loc>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://hanchao-zhang.github.io/others/skills-2/</loc>
+  </url><url>
     <loc>https://hanchao-zhang.github.io/others/skills/</loc>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://hanchao-zhang.github.io/others/experience-2/</loc>
+  </url><url>
     <loc>https://hanchao-zhang.github.io/others/experience/</loc>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://hanchao-zhang.github.io/others/accomplishments-2/</loc>
+  </url><url>
     <loc>https://hanchao-zhang.github.io/others/accomplishments/</loc>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://hanchao-zhang.github.io/others/posts-2/</loc>
+  </url><url>
     <loc>https://hanchao-zhang.github.io/others/posts/</loc>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://hanchao-zhang.github.io/others/projects-2/</loc>
+  </url><url>
     <loc>https://hanchao-zhang.github.io/others/projects/</loc>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://hanchao-zhang.github.io/others/people-2/</loc>
+  </url><url>
     <loc>https://hanchao-zhang.github.io/others/people/</loc>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://hanchao-zhang.github.io/others/talks-2/</loc>
+  </url><url>
     <loc>https://hanchao-zhang.github.io/others/talks/</loc>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://hanchao-zhang.github.io/others/featured-2/</loc>
+  </url><url>
     <loc>https://hanchao-zhang.github.io/others/featured/</loc>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://hanchao-zhang.github.io/others/publications-2/</loc>
+  </url><url>
     <loc>https://hanchao-zhang.github.io/others/publications/</loc>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://hanchao-zhang.github.io/others/tags-2/</loc>
+  </url><url>
     <loc>https://hanchao-zhang.github.io/others/tags/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hanchao-zhang.github.io/talk/example/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hanchao-zhang.github.io/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hanchao-zhang.github.io/talk/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hanchao-zhang.github.io/post/projection-kmeans/</loc>
     <lastmod>2020-10-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hanchao-zhang.github.io/post/</loc>
     <lastmod>2020-10-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hanchao-zhang.github.io/post/adherence/</loc>
     <lastmod>2020-09-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hanchao-zhang.github.io/post/fda/</loc>
     <lastmod>2020-03-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hanchao-zhang.github.io/courses/</loc>
     <lastmod>2020-01-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://hanchao-zhang.github.io/coursess/</loc>
+    <lastmod>2020-01-09T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://hanchao-zhang.github.io/post/jointmodeling/</loc>
     <lastmod>2019-12-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hanchao-zhang.github.io/slides/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hanchao-zhang.github.io/slides/example/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hanchao-zhang.github.io/etcetera/</loc>
     <lastmod>2019-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hanchao-zhang.github.io/post/ocs/</loc>
     <lastmod>2018-10-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hanchao-zhang.github.io/post/data-mining/</loc>
     <lastmod>2018-03-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hanchao-zhang.github.io/tag/deep-learning/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hanchao-zhang.github.io/tag/demo/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hanchao-zhang.github.io/project/external-project/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hanchao-zhang.github.io/project/internal-project/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hanchao-zhang.github.io/project/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hanchao-zhang.github.io/tags/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://hanchao-zhang.github.io/google1d75d5473f8d5cb8-2/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>https://hanchao-zhang.github.io/google1d75d5473f8d5cb8/</loc>
     <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hanchao-zhang.github.io/publication-type/2/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hanchao-zhang.github.io/publication-type/3/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hanchao-zhang.github.io/authors/</loc>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://hanchao-zhang.github.io/authors/</loc>
+  </url><url>
     <loc>https://hanchao-zhang.github.io/categories/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hanchao-zhang.github.io/author/etc/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hanchao-zhang.github.io/author/hanchao-zhang/</loc>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://hanchao-zhang.github.io/author/hanchao-zhang/</loc>
+  </url><url>
     <loc>https://hanchao-zhang.github.io/author/hong-gang-ren/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hanchao-zhang.github.io/author/keven-blighe/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hanchao-zhang.github.io/author/lanqiu-yao/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hanchao-zhang.github.io/publication/preprint/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hanchao-zhang.github.io/author/luqman-safdar/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hanchao-zhang.github.io/author/nan-huo/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hanchao-zhang.github.io/others/</loc>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://hanchao-zhang.github.io/post/_index-2/</loc>
+  </url><url>
     <loc>https://hanchao-zhang.github.io/publication_types/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hanchao-zhang.github.io/publication/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hanchao-zhang.github.io/author/qiu-ning-sun/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hanchao-zhang.github.io/publication/jcd2020/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hanchao-zhang.github.io/author/rou-yu-fang/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hanchao-zhang.github.io/author/xu-li/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hanchao-zhang.github.io/author/yu-guang-liu/</loc>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://hanchao-zhang.github.io/author/%E5%90%B3%E6%81%A9%E9%81%94/</loc>
+  </url><url>
     <loc>https://hanchao-zhang.github.io/author/%E5%90%B3%E6%81%A9%E9%81%94/</loc>
   </url>
-  
 </urlset>

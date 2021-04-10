@@ -14,12 +14,46 @@
     
     <item>
       <title>Academic</title>
+      <link>https://hanchao-zhang.github.io/others/hero-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hanchao-zhang.github.io/others/hero-2/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;The Best Way to Create the Website You Want from Markdown (or Jupyter/RStudio)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Build &lt;strong&gt;Anything&lt;/strong&gt; with Widgets&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;text-shadow: none;&#34;&gt;&lt;a class=&#34;github-button&#34; href=&#34;https://github.com/gcushen/hugo-academic&#34; data-icon=&#34;octicon-star&#34; data-size=&#34;large&#34; data-show-count=&#34;true&#34; aria-label=&#34;Star this on GitHub&#34;&gt;Star&lt;/a&gt;&lt;script async defer src=&#34;https://buttons.github.io/buttons.js&#34;&gt;&lt;/script&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Academic</title>
       <link>https://hanchao-zhang.github.io/others/hero/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://hanchao-zhang.github.io/others/hero/</guid>
       <description>&lt;p&gt;&lt;strong&gt;The Best Way to Create the Website You Want from Markdown (or Jupyter/RStudio)&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Build &lt;strong&gt;Anything&lt;/strong&gt; with Widgets&lt;/p&gt;
 &lt;p&gt;&lt;span style=&#34;text-shadow: none;&#34;&gt;&lt;a class=&#34;github-button&#34; href=&#34;https://github.com/gcushen/hugo-academic&#34; data-icon=&#34;octicon-star&#34; data-size=&#34;large&#34; data-show-count=&#34;true&#34; aria-label=&#34;Star this on GitHub&#34;&gt;Star&lt;/a&gt;&lt;script async defer src=&#34;https://buttons.github.io/buttons.js&#34;&gt;&lt;/script&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Demos</title>
+      <link>https://hanchao-zhang.github.io/others/home-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hanchao-zhang.github.io/others/home-2/</guid>
+      <description>&lt;p&gt;Welcome to the &lt;strong&gt;personal demo&lt;/strong&gt; of Academic. Other demos available include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://sourcethemes.com/academic/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Project Demo&lt;/strong&gt; (Academic&amp;rsquo;s actual site)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Over 100,000 
+&lt;a href=&#34;https://sourcethemes.com/academic/#expo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Amazing Websites&lt;/a&gt; have Already Been Built with Academic&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Join&lt;/a&gt; the Most Empowered Hugo Community&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;This homepage section is an example of adding &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34;&gt;elements&lt;/a&gt; to the &lt;a href=&#34;https://sourcethemes.com/academic/docs/widgets/&#34;&gt;&lt;em&gt;Blank&lt;/em&gt; widget&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Backgrounds can be applied to any section. Here, the &lt;em&gt;background&lt;/em&gt; option is set give an &lt;em&gt;image parallax&lt;/em&gt; effect.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -48,9 +82,25 @@
     
     <item>
       <title>Skills</title>
+      <link>https://hanchao-zhang.github.io/others/skills-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hanchao-zhang.github.io/others/skills-2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Skills</title>
       <link>https://hanchao-zhang.github.io/others/skills/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://hanchao-zhang.github.io/others/skills/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Education</title>
+      <link>https://hanchao-zhang.github.io/others/experience-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hanchao-zhang.github.io/others/experience-2/</guid>
       <description></description>
     </item>
     
@@ -64,9 +114,25 @@
     
     <item>
       <title>Accomplish&amp;shy;ments</title>
+      <link>https://hanchao-zhang.github.io/others/accomplishments-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hanchao-zhang.github.io/others/accomplishments-2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Accomplish&amp;shy;ments</title>
       <link>https://hanchao-zhang.github.io/others/accomplishments/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://hanchao-zhang.github.io/others/accomplishments/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Recent Posts</title>
+      <link>https://hanchao-zhang.github.io/others/posts-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hanchao-zhang.github.io/others/posts-2/</guid>
       <description></description>
     </item>
     
@@ -80,9 +146,25 @@
     
     <item>
       <title>Projects</title>
+      <link>https://hanchao-zhang.github.io/others/projects-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hanchao-zhang.github.io/others/projects-2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
       <link>https://hanchao-zhang.github.io/others/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://hanchao-zhang.github.io/others/projects/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Meet the Team</title>
+      <link>https://hanchao-zhang.github.io/others/people-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hanchao-zhang.github.io/others/people-2/</guid>
       <description></description>
     </item>
     
@@ -96,9 +178,25 @@
     
     <item>
       <title>Recent &amp; Upcoming Talks</title>
+      <link>https://hanchao-zhang.github.io/others/talks-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hanchao-zhang.github.io/others/talks-2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Recent &amp; Upcoming Talks</title>
       <link>https://hanchao-zhang.github.io/others/talks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://hanchao-zhang.github.io/others/talks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Featured Publications</title>
+      <link>https://hanchao-zhang.github.io/others/featured-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hanchao-zhang.github.io/others/featured-2/</guid>
       <description></description>
     </item>
     
@@ -112,6 +210,19 @@
     
     <item>
       <title>Recent Publications</title>
+      <link>https://hanchao-zhang.github.io/others/publications-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hanchao-zhang.github.io/others/publications-2/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Quickly discover relevant content by &lt;a href=&#34;https://hanchao-zhang.github.io/publication/&#34;&gt;filtering publications&lt;/a&gt;.
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Recent Publications</title>
       <link>https://hanchao-zhang.github.io/others/publications/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://hanchao-zhang.github.io/others/publications/</guid>
@@ -121,6 +232,14 @@
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Popular Topics</title>
+      <link>https://hanchao-zhang.github.io/others/tags-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hanchao-zhang.github.io/others/tags-2/</guid>
+      <description></description>
     </item>
     
     <item>
