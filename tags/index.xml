@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags | Hanchao Zhang (张瀚潮)</title>
-    <link>https://hanchao-zhang.github.io/tags/</link>
-      <atom:link href="https://hanchao-zhang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <link>www.hc-zhang.com/tags/</link>
+      <atom:link href="www.hc-zhang.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://hanchao-zhang.github.io/images/logo_hu8381da726ad9f494dd21781da8cda615_5579780_300x300_fit_lanczos_2.png</url>
+      <url>/www.hc-zhang.com/images/logo_hu8381da726ad9f494dd21781da8cda615_5579780_300x300_fit_lanczos_2.png</url>
       <title>Tags</title>
-      <link>https://hanchao-zhang.github.io/tags/</link>
+      <link>www.hc-zhang.com/tags/</link>
     </image>
     
   </channel>

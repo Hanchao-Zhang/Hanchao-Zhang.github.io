@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Recent &amp; Upcoming Talks | Hanchao Zhang (张瀚潮)</title>
-    <link>https://hanchao-zhang.github.io/talk/</link>
-      <atom:link href="https://hanchao-zhang.github.io/talk/index.xml" rel="self" type="application/rss+xml" />
+    <link>www.hc-zhang.com/talk/</link>
+      <atom:link href="www.hc-zhang.com/talk/index.xml" rel="self" type="application/rss+xml" />
     <description>Recent &amp; Upcoming Talks</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jun 2030 13:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://hanchao-zhang.github.io/images/logo_hu8381da726ad9f494dd21781da8cda615_5579780_300x300_fit_lanczos_2.png</url>
+      <url>/www.hc-zhang.com/images/logo_hu8381da726ad9f494dd21781da8cda615_5579780_300x300_fit_lanczos_2.png</url>
       <title>Recent &amp; Upcoming Talks</title>
-      <link>https://hanchao-zhang.github.io/talk/</link>
+      <link>www.hc-zhang.com/talk/</link>
     </image>
     
     <item>
       <title>Example Talk</title>
-      <link>https://hanchao-zhang.github.io/talk/example/</link>
+      <link>www.hc-zhang.com/talk/example/</link>
       <pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate>
-      <guid>https://hanchao-zhang.github.io/talk/example/</guid>
+      <guid>www.hc-zhang.com/talk/example/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click on the &lt;strong&gt;Slides&lt;/strong&gt; button above to view the built-in slides feature.

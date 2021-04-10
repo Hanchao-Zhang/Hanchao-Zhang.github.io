@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors | Hanchao Zhang (张瀚潮)</title>
-    <link>https://hanchao-zhang.github.io/authors/</link>
-      <atom:link href="https://hanchao-zhang.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
+    <link>www.hc-zhang.com/authors/</link>
+      <atom:link href="www.hc-zhang.com/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
     <image>
-      <url>https://hanchao-zhang.github.io/images/logo_hu8381da726ad9f494dd21781da8cda615_5579780_300x300_fit_lanczos_2.png</url>
+      <url>/www.hc-zhang.com/images/logo_hu8381da726ad9f494dd21781da8cda615_5579780_300x300_fit_lanczos_2.png</url>
       <title>Authors</title>
-      <link>https://hanchao-zhang.github.io/authors/</link>
+      <link>www.hc-zhang.com/authors/</link>
     </image>
     
     <item>
       <title>Hanchao Zhang</title>
-      <link>https://hanchao-zhang.github.io/author/hanchao-zhang/</link>
+      <link>www.hc-zhang.com/author/hanchao-zhang/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://hanchao-zhang.github.io/author/hanchao-zhang/</guid>
+      <guid>www.hc-zhang.com/author/hanchao-zhang/</guid>
       <description>&lt;p&gt;Hanchao Zhang is a second year Ph.D. student in the Biostatistics Division at Department of Population Health, Sackler institute of Biomedical Sciences, Grossman School of Medicine, New York University.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>吳恩達</title>
-      <link>https://hanchao-zhang.github.io/author/%E5%90%B3%E6%81%A9%E9%81%94/</link>
+      <link>www.hc-zhang.com/author/%E5%90%B3%E6%81%A9%E9%81%94/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://hanchao-zhang.github.io/author/%E5%90%B3%E6%81%A9%E9%81%94/</guid>
+      <guid>www.hc-zhang.com/author/%E5%90%B3%E6%81%A9%E9%81%94/</guid>
       <description>&lt;p&gt;吳恩達 is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.&lt;/p&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.&lt;/p&gt;
 </description>

@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Publications | Hanchao Zhang (张瀚潮)</title>
-    <link>https://hanchao-zhang.github.io/publication/</link>
-      <atom:link href="https://hanchao-zhang.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
+    <link>www.hc-zhang.com/publication/</link>
+      <atom:link href="www.hc-zhang.com/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
     <image>
-      <url>https://hanchao-zhang.github.io/images/logo_hu8381da726ad9f494dd21781da8cda615_5579780_300x300_fit_lanczos_2.png</url>
+      <url>/www.hc-zhang.com/images/logo_hu8381da726ad9f494dd21781da8cda615_5579780_300x300_fit_lanczos_2.png</url>
       <title>Publications</title>
-      <link>https://hanchao-zhang.github.io/publication/</link>
+      <link>www.hc-zhang.com/publication/</link>
     </image>
     
     <item>
       <title>Liver damage, gastrointestinal symptoms and severity of disease in COVID-19</title>
-      <link>https://hanchao-zhang.github.io/publication/preprint/</link>
+      <link>www.hc-zhang.com/publication/preprint/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://hanchao-zhang.github.io/publication/preprint/</guid>
+      <guid>www.hc-zhang.com/publication/preprint/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Quantitative evaluation of rejuvenation treatment of nasolabial fold wrinkles by regression model and 3D photography</title>
-      <link>https://hanchao-zhang.github.io/publication/jcd2020/</link>
+      <link>www.hc-zhang.com/publication/jcd2020/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://hanchao-zhang.github.io/publication/jcd2020/</guid>
+      <guid>www.hc-zhang.com/publication/jcd2020/</guid>
       <description></description>
     </item>
     
