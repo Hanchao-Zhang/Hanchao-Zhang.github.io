@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Courses | Hanchao Zhang (张瀚潮)</title>
-    <link>/coursess/</link>
-      <atom:link href="/coursess/index.xml" rel="self" type="application/rss+xml" />
+    <title>Courses | Hanchao Ted Zhang (张瀚潮)</title>
+    <link>https://hanchao-zhang.github.io/coursess/</link>
+      <atom:link href="https://hanchao-zhang.github.io/coursess/index.xml" rel="self" type="application/rss+xml" />
     <description>Courses</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 09 Jan 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/logo_hu8381da726ad9f494dd21781da8cda615_5579780_300x300_fit_lanczos_2.png</url>
+      <url>https://hanchao-zhang.github.io/images/logo_hu8381da726ad9f494dd21781da8cda615_5579780_300x300_fit_lanczos_2.png</url>
       <title>Courses</title>
-      <link>/coursess/</link>
+      <link>https://hanchao-zhang.github.io/coursess/</link>
     </image>
     
   </channel>

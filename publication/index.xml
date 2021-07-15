@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Publications | Hanchao Zhang (张瀚潮)</title>
+    <title>Publications | Hanchao Ted Zhang (张瀚潮)</title>
     <link>https://hanchao-zhang.github.io/publication/</link>
       <atom:link href="https://hanchao-zhang.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
@@ -11,6 +11,14 @@
       <title>Publications</title>
       <link>https://hanchao-zhang.github.io/publication/</link>
     </image>
+    
+    <item>
+      <title>Publications</title>
+      <link>https://hanchao-zhang.github.io/publication/_index-3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hanchao-zhang.github.io/publication/_index-3/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Quantitative evaluation of rejuvenation treatment of nasolabial fold wrinkles by regression model and 3D photography</title>
