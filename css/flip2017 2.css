@@ -1,0 +1,261 @@
+/*************************************************
+ *  Additional Styles from Flip; Aug 2017
+ * Relative to Hugo Theme Academic defaults
+ **************************************************/
+
+ /* GENERAL FORMATTING */
+ /* Make the default text size smaller, and Raleway */
+ @media screen and (min-width: 58em) {
+   html {
+     font-size: 18px;
+   }
+ }
+
+/* GRAY TEXT */
+.comment{
+  font-family: 'Raleway', sans-serif;
+  color: #AAAAAA;
+}
+
+body{
+  /*font-family: 'Raleway', sans-serif;*/
+  background-color:#333333;
+  /*background-color: #ffffff;*/
+}
+
+#THECONTENT{
+  background-color: #ffffff;
+}
+/*
+WHAT THIS IS:
+In body{} above I set the background color to dark gray.
+This is so that the background color matches the footer.
+(Otherwise if you over-scroll then you end up getting white)
+#THECONTENT is a div tag that opens at the bottom of navbar.html
+and closes at the top of footer_container.html
+That makes the main content white.
+*/
+
+
+.btn{
+  font-family: 'Raleway', sans-serif;
+}
+
+/* FOR HONORS LIST IN CV */
+.ul-honors{
+  font-family: 'Raleway', sans-serif;
+  color: #AAAAAA;
+  list-style: none;
+}
+
+
+
+#profile .portrait {
+  background-image: url('../img/portrait.jpg');
+  width: 230px;
+  height: 230px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+}
+
+
+
+
+#flip-moved-social-icons ul.social-icon {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+}
+
+#flip-moved-social-icons .social-icon li {
+  margin-right: 10px;
+}
+
+#flip-moved-social-icons .social-icon li:last-of-type {
+  margin-right: 0;
+}
+
+#flip-moved-social-icons .social-icon li:hover {
+  transform: scale(1.2)
+}
+
+#flip-moved-social-icons a{
+  color: #AAAAAA;
+}
+
+#flip-moved-social-icons a:hover{
+  color: #0095eb;
+}
+
+
+
+
+
+
+
+/* Watermark
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* to make "white bg" transparent */
+.home-section {
+  background-color: transparent;
+  /*z-index: 1;*/ /* Bootstraps default z-indices are around 1000 */
+}
+
+#watermark{
+	/*background-image:url('http://physics.ucr.edu/~flip/images/BG_Bundle2.jpg');*/
+	background-size: 700px 350px;
+	background-repeat:no-repeat;
+	background-position:left top;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 30px;
+	left: 0px;
+  pointer-events: none;
+	/*z-index: 0;*/
+  /* -1: doesn't show on home page; 0+: no links on other pages */
+  /* less than zero */
+  /* causes problems with other pages */
+  /* solution: https://stackoverflow.com/questions/3538489/html-css-make-a-div-invisible-to-clicks */
+	height: 100%;
+	width: 100%;
+	text-align: right;
+	opacity: 0.1;
+}
+
+.sidebarpic{
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+/* FOR STUDENT LIST IN RESEARCH */
+/*https://stackoverflow.com/questions/34667466/how-to-center-this-horizontal-list-of-images*/
+/*better: https://stackoverflow.com/questions/19645931/inline-images-with-captions-centered-under-each*/
+.ul-students{
+  font-family: 'Raleway', sans-serif;
+  color: #AAAAAA;
+}
+
+.ul-students:after {
+  content: attr(title);
+  display: block;
+  text-align: center;
+}
+
+.ul-students ul {
+  text-align: center;
+  padding: 0;
+}
+
+.ul-students li {
+  width: 25%;
+  display: inline-block;
+  vertical-align: bottom;
+  font-size: .75rem;
+}
+
+.ul-students li img {
+  max-width: 80%;
+  height: auto;
+}
+
+/* STUDENT photos on index.html */
+.studentpic{
+  border-radius: 10px;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+
+
+/* FOOTER */
+
+footer {
+  font-family: 'Raleway', sans-serif;
+  background-color:#333333;
+}
+
+
+#botbar1{
+	background-color:#C1BBAB;
+	margin: 0;
+	padding: 0;
+  position:relative;
+	top: 75px;
+	left: 0px;
+	z-index: 9;
+	height: 7px;
+	width: 100%;
+}
+/* Why is this exactly 927? I do not know! Trial-and-error. */
+@media screen and (max-width: 927px) {
+  #botbar1{
+    top: 65px;
+  }
+}
+
+
+#feynmanfoot{
+	/*background-image:url('http://physics.ucr.edu/~flip/images/feynmanfooter.png');*/
+	background-size: 250px 200px;
+	background-repeat:no-repeat;
+	background-position:left top;
+  pointer-events: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+  position: relative;
+	bottom: 97px;
+	/*left: 700px;*/
+  left: 75vw;
+  right:25vw;
+	z-index: 200;
+	height: 200px;
+	width: 250px;
+	text-align: right;
+}
+@media screen and (max-width: 980px) {
+  #feynmanfoot{
+    left: 68vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  #feynmanfoot{
+    left: 50vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  #feynmanfoot{
+    left: 10vw;
+  }
+}
+
+/* NAVBAR coloring */
+
+.navbar-default{
+    background-color:rgba(0, 0, 0, 0.75);
+}
+
+.navbar-default .navbar-brand {
+  color: white;
+}
+
+.navbar-default .navbar-nav li a{
+    color: white;
+}
+
+.navbar-default .navbar-nav li a:hover{
+    background-color: #333333;
+}

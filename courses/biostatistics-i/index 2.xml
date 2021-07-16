@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Biostatistics I | Hanchao Zhang (张瀚潮)</title>
+    <link>https://hanchao-zhang.github.io/courses/biostatistics-i/</link>
+      <atom:link href="https://hanchao-zhang.github.io/courses/biostatistics-i/index.xml" rel="self" type="application/rss+xml" />
+    <description>Biostatistics I</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 09 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://hanchao-zhang.github.io/images/icon_hu4b7d6a561d3ec3249b8edd16cd71f089_104323_512x512_fill_lanczos_center_2.png</url>
+      <title>Biostatistics I</title>
+      <link>https://hanchao-zhang.github.io/courses/biostatistics-i/</link>
+    </image>
+    
+  </channel>
+</rss>

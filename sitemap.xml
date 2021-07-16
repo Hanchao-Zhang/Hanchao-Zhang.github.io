@@ -2,8 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://hanchao-zhang.github.io/courses/statistical-inference-i/_index-2/</loc>
-    <lastmod>2019-09-09T00:00:00+00:00</lastmod>
+    <loc>https://hanchao-zhang.github.io/others/aboutme/</loc>
+    <lastmod>2016-04-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hanchao-zhang.github.io/courses/statistical-inference-i/</loc>
     <lastmod>2019-09-09T00:00:00+00:00</lastmod>
@@ -15,11 +15,17 @@
   </url><url>
     <loc>https://hanchao-zhang.github.io/others/home/</loc>
   </url><url>
+    <loc>https://hanchao-zhang.github.io/others/skills-2/</loc>
+  </url><url>
     <loc>https://hanchao-zhang.github.io/others/skills/</loc>
+  </url><url>
+    <loc>https://hanchao-zhang.github.io/others/experience-2/</loc>
   </url><url>
     <loc>https://hanchao-zhang.github.io/others/experience/</loc>
   </url><url>
     <loc>https://hanchao-zhang.github.io/others/accomplishments/</loc>
+  </url><url>
+    <loc>https://hanchao-zhang.github.io/others/posts-3/</loc>
   </url><url>
     <loc>https://hanchao-zhang.github.io/others/posts/</loc>
   </url><url>
@@ -27,11 +33,19 @@
   </url><url>
     <loc>https://hanchao-zhang.github.io/others/people/</loc>
   </url><url>
+    <loc>https://hanchao-zhang.github.io/others/talks-2/</loc>
+  </url><url>
     <loc>https://hanchao-zhang.github.io/others/talks/</loc>
+  </url><url>
+    <loc>https://hanchao-zhang.github.io/others/featured-2/</loc>
   </url><url>
     <loc>https://hanchao-zhang.github.io/others/featured/</loc>
   </url><url>
+    <loc>https://hanchao-zhang.github.io/others/publications-2/</loc>
+  </url><url>
     <loc>https://hanchao-zhang.github.io/others/publications/</loc>
+  </url><url>
+    <loc>https://hanchao-zhang.github.io/others/tags-2/</loc>
   </url><url>
     <loc>https://hanchao-zhang.github.io/others/tags/</loc>
   </url><url>
@@ -95,13 +109,14 @@
     <loc>https://hanchao-zhang.github.io/tags/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://hanchao-zhang.github.io/others/</loc>
+    <lastmod>2016-04-20T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://hanchao-zhang.github.io/publication-type/2/</loc>
   </url><url>
     <loc>https://hanchao-zhang.github.io/publication-type/3/</loc>
   </url><url>
     <loc>https://hanchao-zhang.github.io/archieve/</loc>
-  </url><url>
-    <loc>https://hanchao-zhang.github.io/authors/</loc>
   </url><url>
     <loc>https://hanchao-zhang.github.io/authors/</loc>
   </url><url>
@@ -117,13 +132,7 @@
   </url><url>
     <loc>https://hanchao-zhang.github.io/author/ms/</loc>
   </url><url>
-    <loc>https://hanchao-zhang.github.io/others/</loc>
-  </url><url>
-    <loc>https://hanchao-zhang.github.io/post/_index-2/</loc>
-  </url><url>
     <loc>https://hanchao-zhang.github.io/publication_types/</loc>
-  </url><url>
-    <loc>https://hanchao-zhang.github.io/publication/_index-3/</loc>
   </url><url>
     <loc>https://hanchao-zhang.github.io/publication/</loc>
   </url><url>
@@ -144,9 +153,5 @@
     <loc>https://hanchao-zhang.github.io/author/xu-li/</loc>
   </url><url>
     <loc>https://hanchao-zhang.github.io/author/yu-guang-liu/</loc>
-  </url><url>
-    <loc>https://hanchao-zhang.github.io/author/%E5%90%B3%E6%81%A9%E9%81%94/</loc>
-  </url><url>
-    <loc>https://hanchao-zhang.github.io/author/%E5%90%B3%E6%81%A9%E9%81%94/</loc>
   </url>
 </urlset>

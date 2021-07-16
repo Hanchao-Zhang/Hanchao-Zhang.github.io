@@ -5,12 +5,30 @@
     <link>https://hanchao-zhang.github.io/others/</link>
       <atom:link href="https://hanchao-zhang.github.io/others/index.xml" rel="self" type="application/rss+xml" />
     <description>Others</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://hanchao-zhang.github.io/images/logo_hu8381da726ad9f494dd21781da8cda615_5579780_300x300_fit_lanczos_2.png</url>
       <title>Others</title>
       <link>https://hanchao-zhang.github.io/others/</link>
     </image>
+    
+    <item>
+      <title></title>
+      <link>https://hanchao-zhang.github.io/others/aboutme/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>https://hanchao-zhang.github.io/others/aboutme/</guid>
+      <description>&lt;!-- # Biography --&gt;
+&lt;h1 id=&#34;biography&#34;&gt;Biography&lt;/h1&gt;
+&lt;p&gt;I spend a lot of time thinking about dark matter.&lt;/p&gt;
+&lt;p&gt;I grew up in Los Angeles and studied math and physics at Stanford. I did masters degrees in Cambridge the IPPP at Durham, then completed my Ph.D at Cornell. After postdoc at UC Irvine, I am now an assistant professor at UCR.&lt;/p&gt;
+&lt;p&gt;I fell in love with physics after reading &lt;em&gt;The Physics of Star Trek&lt;/em&gt; and continue to value science communication in its many forms.
+&lt;img src=&#34;https://hanchao-zhang.github.io/img/boards.jpg&#34; alt=&#34;This is an image&#34;&gt;&lt;/p&gt;
+&lt;!-- I grew up in Los Angeles and enjoy swimming, science fiction, and hope to one day have a golden retriever. --&gt;
+&lt;!-- Experiment with an image:
+
+![This is an image](/img/boards.jpg) --&gt;
+</description>
+    </item>
     
     <item>
       <title>Academic</title>
@@ -48,9 +66,25 @@
     
     <item>
       <title>Skills</title>
+      <link>https://hanchao-zhang.github.io/others/skills-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hanchao-zhang.github.io/others/skills-2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Skills</title>
       <link>https://hanchao-zhang.github.io/others/skills/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://hanchao-zhang.github.io/others/skills/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Education</title>
+      <link>https://hanchao-zhang.github.io/others/experience-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hanchao-zhang.github.io/others/experience-2/</guid>
       <description></description>
     </item>
     
@@ -67,6 +101,14 @@
       <link>https://hanchao-zhang.github.io/others/accomplishments/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://hanchao-zhang.github.io/others/accomplishments/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Recent Posts</title>
+      <link>https://hanchao-zhang.github.io/others/posts-3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hanchao-zhang.github.io/others/posts-3/</guid>
       <description></description>
     </item>
     
@@ -96,9 +138,25 @@
     
     <item>
       <title>Recent &amp; Upcoming Talks</title>
+      <link>https://hanchao-zhang.github.io/others/talks-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hanchao-zhang.github.io/others/talks-2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Recent &amp; Upcoming Talks</title>
       <link>https://hanchao-zhang.github.io/others/talks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://hanchao-zhang.github.io/others/talks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Featured Publications</title>
+      <link>https://hanchao-zhang.github.io/others/featured-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hanchao-zhang.github.io/others/featured-2/</guid>
       <description></description>
     </item>
     
@@ -112,6 +170,19 @@
     
     <item>
       <title>Recent Publications</title>
+      <link>https://hanchao-zhang.github.io/others/publications-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hanchao-zhang.github.io/others/publications-2/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Quickly discover relevant content by &lt;a href=&#34;https://hanchao-zhang.github.io/publication/&#34;&gt;filtering publications&lt;/a&gt;.
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Recent Publications</title>
       <link>https://hanchao-zhang.github.io/others/publications/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://hanchao-zhang.github.io/others/publications/</guid>
@@ -121,6 +192,14 @@
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Popular Topics</title>
+      <link>https://hanchao-zhang.github.io/others/tags-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hanchao-zhang.github.io/others/tags-2/</guid>
+      <description></description>
     </item>
     
     <item>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>News | Hanchao Zhang</title>
+    <link>/news/</link>
+      <atom:link href="/news/index.xml" rel="self" type="application/rss+xml" />
+    <description>News</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
+    <image>
+      <url>/images/icon_hu4b7d6a561d3ec3249b8edd16cd71f089_104323_512x512_fill_lanczos_center_2.png</url>
+      <title>News</title>
+      <link>/news/</link>
+    </image>
+    
+    <item>
+      <title>News</title>
+      <link>/news/news/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/news/news/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

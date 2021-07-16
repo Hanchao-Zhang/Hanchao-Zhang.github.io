@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publication_types | Hanchao Zhang (张瀚潮)</title>
+    <link>https://hanchao-zhang.github.io/publication_types/</link>
+      <atom:link href="https://hanchao-zhang.github.io/publication_types/index.xml" rel="self" type="application/rss+xml" />
+    <description>Publication_types</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
+    <image>
+      <url>https://hanchao-zhang.github.io/images/logo_hu8381da726ad9f494dd21781da8cda615_5579780_300x300_fit_lanczos_2.png</url>
+      <title>Publication_types</title>
+      <link>https://hanchao-zhang.github.io/publication_types/</link>
+    </image>
+    
+  </channel>
+</rss>

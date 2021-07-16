@@ -1,0 +1,1409 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Hanchao Zhang">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="1. Introduction In this project, we reviewed papers about time-dependent cox model, Therneau, T., Crowson, C., &amp; Atkinson, E. (2013). Using time-dependent covariates and time dependent coefficients in the Cox model.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://hanchao-zhang.github.io/post/jointmodeling/">
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  <meta name="theme-color" content="#57068c">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+    
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crimson+Pro:400,400i,700,700i%7CLora:400,400i%7CKarla:400,400i,700,700i%7CRoboto+Mono%7CMontserrat:400,700%7CRoboto:400,400italic,700%7CNotable%7CJosefin+Sans:700,700i%7CPrompt:600%7CPermanent+Marker%7CFredoka+One%7CInknut+Antiqua:400,400i,600,600i&display=swap">
+    
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu4b7d6a561d3ec3249b8edd16cd71f089_104323_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu4b7d6a561d3ec3249b8edd16cd71f089_104323_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="https://hanchao-zhang.github.io/post/jointmodeling/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@tedddddy_zhang">
+  <meta property="twitter:creator" content="@tedddddy_zhang">
+  
+  <meta property="og:site_name" content="Hanchao Zhang (张瀚潮)">
+  <meta property="og:url" content="https://hanchao-zhang.github.io/post/jointmodeling/">
+  <meta property="og:title" content="Paper Review Time-dependent ROCs and AUCs for censored endpoints, dynamic prediction via joint modeling and landmarking | Hanchao Zhang (张瀚潮)">
+  <meta property="og:description" content="1. Introduction In this project, we reviewed papers about time-dependent cox model, Therneau, T., Crowson, C., &amp; Atkinson, E. (2013). Using time-dependent covariates and time dependent coefficients in the Cox model."><meta property="og:image" content="https://hanchao-zhang.github.io/post/jointmodeling/featured.png">
+  <meta property="twitter:image" content="https://hanchao-zhang.github.io/post/jointmodeling/featured.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2019-12-20T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2019-12-20T00:00:00&#43;00:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://hanchao-zhang.github.io/post/jointmodeling/"
+  },
+  "headline": "Paper Review Time-dependent ROCs and AUCs for censored endpoints, dynamic prediction via joint modeling and landmarking",
+  
+  "image": [
+    "https://hanchao-zhang.github.io/post/jointmodeling/featured.png"
+  ],
+  
+  "datePublished": "2019-12-20T00:00:00Z",
+  "dateModified": "2019-12-20T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Hanchao Zhang"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Hanchao Zhang (张瀚潮)",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://hanchao-zhang.github.io/images/logo_hu8381da726ad9f494dd21781da8cda615_5579780_192x192_fit_lanczos_2.png"
+    }
+  },
+  "description": "1. Introduction In this project, we reviewed papers about time-dependent cox model, Therneau, T., Crowson, C., \u0026amp; Atkinson, E. (2013). Using time-dependent covariates and time dependent coefficients in the Cox model."
+}
+</script>
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Paper Review Time-dependent ROCs and AUCs for censored endpoints, dynamic prediction via joint modeling and landmarking | Hanchao Zhang (张瀚潮)</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class=" ">
+
+  
+  
+  
+    <script>window.staDarkLightChooser = true;</script>
+  
+  
+    <script>const isSiteThemeDark = false;</script>
+  
+  
+  <script src="/js/load-theme.js"></script>
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/"><img src="/images/logo_hu8381da726ad9f494dd21781da8cda615_5579780_0x70_resize_lanczos_2.png" alt="Hanchao Zhang (张瀚潮)"></a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/"><img src="/images/logo_hu8381da726ad9f494dd21781da8cda615_5579780_0x70_resize_lanczos_2.png" alt="Hanchao Zhang (张瀚潮)"></a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-center" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/post/"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/publication/"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/courses/"><span>Courses</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/etcetera/"><span>Etcetera</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link js-theme-selector" data-toggle="dropdown" aria-haspopup="true">
+          <i class="fas fa-palette" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+
+  <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<div class="article-container pt-3">
+  <h1>Paper Review Time-dependent ROCs and AUCs for censored endpoints, dynamic prediction via joint modeling and landmarking</h1>
+
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Fri, Dec 20, 2019
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    11 min read
+  </span>
+  
+
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1" href="/files/post3.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1" href="https://github.com/Hanchao-Zhang/cross-validation-for-joint-modeling" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 420px; max-height: 341px;">
+  <div style="position: relative">
+    <img src="/post/jointmodeling/featured.png" alt="" class="featured-image">
+    <span class="article-header-caption">Image generated from: [<strong>R version 3.6.3</strong>]</span>
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <h2 id="1-introduction">1. Introduction</h2>
+<p>In this project, we reviewed papers about time-dependent cox model, <em>Therneau, T., Crowson, C., &amp; Atkinson, E. (2013). Using time-dependent covariates and time dependent coefficients in the Cox model. Red, 2, 1.</em>, joint modeling with survival and longitudinal process, <em>Hsieh, Fushing, Yi-Kuan Tseng, and Jane-Ling Wang. 2006. &ldquo;Joint Modeling of Survival and Longitudinal Data: Likelihood Approach Revisited.&rdquo; Biometrics 62 (4). Blackwell Publishing Inc: 1037-43.doi:10.1111/j.1541-0420.2006.00570.x.</em>, landmarking analysis, <em>Dafni, U. (2011). Landmark analysis at the 25-year landmark point. Circulation: Cardiovascular Quality and Outcomes, 4(3), 363-371.</em></p>
+<p>Apart from the model&rsquo;s section, we also reviewed several papers to evaluate the prediction accuracy for the models above. <em>Rizopoulos, D., Molenberghs, G., &amp; Lesaffre, E. M. (2017). Dynamic predictions with time-dependent covariates in survival analysis using joint modeling and landmarking. Biometrical Journal, 59(6), 1261-1276.</em> is the main one that we used to perform the simulation and real data analysis.</p>
+<h2 id="2-modelings-and-methods">2. Modelings and Methods</h2>
+<p>In this section, we will introduce the three models that we reviewed, we also focused on the differences between the three models and the advantages and disadvantages of the three models.</p>
+<h3 id="21-time-dependent-covariates-cox-models">2.1 Time dependent covariates Cox models</h3>
+<p>Before introducing the time-dependent covariates cox model, we want to refresh our memory on the proportional hazard model (cox model), which we define the hazard function as</p>
+<p>$$\lambda(t|Z) = \lambda_0(t)\exp{\beta' Z} $$</p>
+<p>where the baseline hazard $\lambda_0(t)$ depends on time $t$ but not depends on the covariates $Z$ and the hazard ratio $e^{\beta' Z}$ depends on covariates $Z$ but not depends on time $t$.</p>
+<p>There are cases where if we measure some of the $Z_j$ over time, they may vary ( e.g. biomarkers)<br>
+Often time, a small fraction of the available biomarker information is used.
+One example that motivated the time depends covariates cox model is the Stanford Heart transplant example, where a standard cox model was initially fit without consideration on the time-dependent covariate waiting time to get transplants which can be an important both in inference and prediction, the patients get the transplant earlier might have a higher survival probability due to the better condition of the early-stage patients.</p>
+<p>When we have such time-dependent covariates, we might want to modify the cox model so that it can take account for the time-dependent effect on the measured biomarkers. We can rewrite the hazard function where the exponential part was expressed by a linear combination of the covariates that depends on time:</p>
+<p>$$\lambda(t) = \lambda_0(t)\exp{\beta' Z(t)}$$</p>
+<p>it looks like a tiny modification, but it has a different meaning when looking at what do these two models measure.</p>
+<p>for the cox model, we are comparing the survival distributions between those patients with different treatment. However, for the time-dependent covariates cox model, we are actually comparing the risk of an event between transplant and non-transplant at each event time, but we re-evaluated each person based on whether they had had a transplant by that time.</p>
+<p>Inference proceeds similarly to the Cox model (time-independent), the only difference is that the values of Z now changes at each risk set.
+We can calculate the partial likelihood as follow:</p>
+<p>$$\mathcal{L}(\beta) = \prod_{i=1}^n \frac{\exp{\beta Z_i(T_i)}}{\sum_{j \in \mathcal{R}(t_i)(\beta' Z_j(T_i) }}\delta_i$$</p>
+<p>However, one important feature for the time dependents covariates model is that the external covariates are more appropriate for the model compared to the internal covariates. To be specific, we want the covariates depends on time but not depends on the failure to be included in the time-dependent covariates cox model instead of the covariates that we cannot observe or dependents on the failure of the patients.</p>
+<h3 id="22-joint-models-with-longitudinal-process-and-survival-process">2.2 Joint Models with longitudinal process and survival process</h3>
+<p>To account for the special features of internal covariates, joint models for longitudinal and time-to-event data have been developed.</p>
+<p>In the joint modeling, we need two outcome variables, a longitudinal outcome, and a survival outcome, instead of only one survival outcome in the previous time-dependent covariates cox model.</p>
+<p>The joint model was combined by the process of a longitudinal mixed effect submodel, a survival submodel and a joint model of the above two submodels.</p>
+<p>For the longitudinal process, we have a mixed effect model:
+$$y_i(t) = m_i(t) + \epsilon_i(t) = \boldsymbol{x_i}^T\boldsymbol{\beta} + \boldsymbol{Z_i}(t)\boldsymbol{b_i} + \epsilon_i $$
+where $y_i(t)$ denotes the observed longitudianl outcome at time $t$. $\boldsymbol{x_i}$, $\boldsymbol{z_i}$ denote the fix effect and random effect at time $t$ respectively, and the $m_i(t)$ denotes the predicted longitudinal outcome using the fix effect and random effect at time $t$.</p>
+<p>For the survival process, we have a cox model:
+$$h_i(t|\mathcal{M}_i(t)) = h_0(t)\exp{\gamma^T w_i + \alpha m_i(t) } $$</p>
+<p>where $\mathcal{M}_i(t) = {m_i(s), 0 &lt; s &lt; t }:$ the history of the true (unobserved) longitudinal process up to time $t$, $\alpha$ quantifies the association between the true value of the marker at time $t$ and the hazard for an event and $w_i$ is a vector of baseline covariates.</p>
+<p>We are able to rewrite the survival probability as follow:
+$$S_j{t |\mathcal{M}_i(t, b_j), \theta} = \exp{\int_0^t h_0(s)\exp{\gamma^T w_j + \alpha_j(s) } } $$</p>
+<p>The joint likelihood function is:
+$$p(y_j, T_i, \delta_i) = \int p(y_i|b_i){h(T_i|b_i)^{\delta_i}S(T_i|b_i)}p(b_i)db_i $$
+The likelihood of the model is derived under the conditional independence assumptions that given the random effects, both longitudinal and event time process are assumed independent, and the longitudinal response of each subject are assumed independent.</p>
+<p>Estimation of the joint models' parameters can be based either on maximum likelihood or a Bayesian approach using Markov chain Monte Carlo (MCMC) algorithms.</p>
+<p>We can also use the joint model to do dynamic prediction, using the covariates recorded up to time $t$, we can predict the survival probability $\pi(u|t)$ at time $u$ where $u&gt;t$
+$$\pi(u|t) = \Pr(T_j^* \ge u | T_j^* &gt; t, y_j(t), D_n)$$
+Where $T_j^*$ is the true event time for subject $j$, and $D_n$ is the set ${T_i, \delta_i, y_i }$. Meanwhile, when we have new information at time $t' &gt; t$, we can update to obtain $\pi_j(u|t')$</p>
+<h3 id="23-landmarking">2.3 Landmarking</h3>
+<p>Landmarking can also provide the survival probability $\pi_j(u|t)$ for patient $j$ with resetting the time to zero being the landmarking time.</p>
+<p>$$h_i(u) = \lim_{\Delta t \rightarrow 0}\frac{1}{\Delta t}\Pr(u \le T_i^*&lt;u + \Delta t | T_i^* \ge u$$</p>
+<p>$$\mathcal{Y}_i(t) =  h_0(u)\exp{\gamma^T w_i + \alpha \tilde{y}_i(t) }$$</p>
+<p>where $w_i$ denotes the baseline covariates and $\tilde{y}_i(t)$ denotes the last available longitudinal response that also enters into the model as an ordinary baseline covariate. The survival probability $\pi_j(u|t)$ at time $t$ can be obtained by the mean of the Breslow estimator:
+$$\hat\pi^{LM}_j(u|t) = \exp{-\hat H_0(u)exp{\hat \gamma^T w_l + \hat \alpha \tilde y_j(t) } }$$</p>
+<p>where</p>
+<p>$$\hat H_0(u) = \sum_{i\in \mathcal{R}(t)} \frac{I(T_i \le u) \delta_i}{\sum_{l \in \mathcal{R}(u)} \exp{\hat \gamma^T w_l + \hat \alpha \tilde y_l(t) } }$$
+However, comparing to the joint modeling, this approach have several disadvantages:</p>
+<ol>
+<li>
+<p>A potential responder will only belong to the &lsquo;responder&rsquo; group if they survives until time of response. (Immortal time bias)</p>
+</li>
+<li>
+<p>Responder v.s. non-responder is something that is not known at baseline, which makes the grouping based on something that will happen in the future that leads to the unpromising facts that any subjects who were lost to follow-up or died prior to landmark time are excluded from further analysis.</p>
+</li>
+</ol>
+<img src="lm1.png" alt="Smiley face" width="300" height="300" style="clear:right">
+<img src="lm2.png" alt="Smiley face" width="300" height="300" style="clear:left">
+<p>An important feature in landmarking is landmarking time. The result of survival analysis can be varied with different landmark times since the event happened before the landmark time is excluded from the analysis. We will obtain a smaller sample size and statistical power with later landmark time. However, we are prone to miss-classify the late responder to non-responder if we have an earlier landmark time. So, the choice of landmark time is arbitrary and crucial.</p>
+<h2 id="3-measuring-model-predictive-performance">3. Measuring model predictive performance</h2>
+<p>After we reviewed those modeling methods, an important factor in evaluating the models is the predictive performance of the models. Here, we first define two evaluation methods, Discrimination, and Calibration. Then, we evaluated the three models using the two methods on real data (not the original data but a data set simulated based on the original real data) and simulated data.</p>
+<h3 id="31-discrimination">3.1 Discrimination</h3>
+<p>Instead of calculating the discrimination of a time point, we focus on a time interval where we can take into account the dynamic nature of the longitudinally measured biomarker. The time interval also has medical relevance during which the physicians can take action to improve the survival probability of the patients who are about to go through events. They defined their prediction rules as follow:</p>
+<ol>
+<li>
+<p>We term subject $j$ as a case if the survival probability of patient $j$ is smaller than a threshold $c$, $\pi_j(t + \Delta t | t) &lt; c$</p>
+</li>
+<li>
+<p>Conversely term subject $j$ as a control if the survival probability of patient $j$ is larger than a threshold $c$, $\pi_j(t + \Delta t | t) &gt; c$ for any $c \in [0,1]$</p>
+</li>
+<li>
+<p>For any randomly chosen pair of subjects ${i, j}$, the model can be assessed by the area under the curve using different $c$</p>
+</li>
+<li>
+<p>If subject $j$ experiences the event within the time interval, they should be assigned a lower survival probability by the model</p>
+</li>
+</ol>
+<p>We can estimate the AUC by appropriately counting the concordant pairs of subjects. Meanwhile, we decompose AUC into 4 parts first and then weighted each AUC by the probability of they will be comparable, meaning that we weight the AUC by the probability of the senior happening.</p>
+<img src="auctbl.png" alt="Smiley face" width="600" height="600" style="clear:right">
+<p>and thus, we have the estimation of $AUC$ expressed as follow:
+$$\hat{AUC}<em>m = \frac{\sum</em>{i = 1}^n \sum_{j = 1, j\ne i}^n I{\hat\pi_i(t + \Delta t|t) &lt; \hat\pi_j(t + \Delta t|t) \times I{\Omega_{ij}^{(m)}(t) \times \hat \nu_{ij}^{(m)} }  } }{\sum_{i = 1}^n \sum_{j = 1, j\ne i}^n I{\Omega_{ij}^{(m)} (t) \times  \nu_{ij}^{(m)} } }$$</p>
+<p>where $m = 2,3,4$ and $\hat \nu_{ij}^2 = 1 - \hat\pi_i(t + \Delta t | T_i)$, $\hat \nu_{ij}^3 = \hat\pi_i(t + \Delta t | T_i)$, $\hat \nu_{ij}^4 = 1 - \hat\pi_i(t + \Delta t | T_i)\times\hat\pi_i(t + \Delta t | T_i) $</p>
+<h3 id="32-calibration">3.2 Calibration</h3>
+<p>Similar to the discrinimation, we also want to take account into the longitudinal nature of the biomaker. And the goal is to predict the occurrence of events at $u &gt; t$ given the information recorded up to time $t$.
+$$PE(u | t) = E[L {I(T^* &gt; u) - \pi(u|t) } ] $$
+An estimate of $PE(u|t)$ considering censoring was proposed by Henderson et al.(2002):</p>
+<p>$\hat PE(u|t)= { n(t)}^{-1} \sum_{i: T&gt;t} I(T_i &gt; u)L{ 1 - \hat\pi_i(u|t) } + \delta_i  I(T_i &lt; u)L{ 0 - \hat\pi_i(u|t) } $</p>
+<p>$$+ (1 - \delta_i)[  \hat\pi_i(u|T_i)L{ 1 - \hat\pi_i(u|t) } +  (1 - \hat\pi_i(u|T_i))L{ 0 - \hat\pi_i(u|t) }]$$</p>
+<p>where ${ n(t)}^{-1}$ is the number of subjects at riskt at time $t$, $I(T_i &gt; u)L{ 1 - \hat\pi_i(u|t) }$ denotes the patients who were alive after time $u$, $\delta_i  I(T_i &lt; u)L{ 0 - \hat\pi_i(u|t) }$ denotes the patients who were died before time $u$, and $ (1 - \delta_i)[  \hat\pi_i(u|T_i)L{ 1 - \hat\pi_i(u|t) } +  (1 - \hat\pi_i(u|T_i))L{ 0 - \hat\pi_i(u|t) }]$ denotes the patients who are censored at time $u$.</p>
+<h2 id="4-aortic-valve-dataset-analysis">4. Aortic valve dataset analysis}</h2>
+<p>Some facts of the dataset:</p>
+<ol>
+<li>285 patients who received a human tissue valve in the aortic position in hospital from 1987 to 2008</li>
+<li>77(27%) of the patients received a subcoronary implantation(SI) and 208 of the patients received root replacement(RR)</li>
+<li>73 of the patients required reoperation and 59 patients had died after operation</li>
+<li>Echo examinations were scheduled at 6 months and 1 year postoperatively, and biennially thereafter.
+The aortic gradient was taken at each examination</li>
+</ol>
+<img src="Picture1.png" alt="Smiley face" width="300" height="300" style="clear:right">
+<p>we can find that there are minimal differences in the reoperation-free survival rates between RR and SI, and considerable variability in the shape of these trajectories, meanwhile no systematic differences apparent between the two groups. The following table is from rizopoulos2017dynamic paper, showing the prediction accuracy and AUC for three models.</p>
+<img src="Picture2.png" alt="Smiley face" width="300" height="300" style="clear:left">
+<img src="tbl1.png" alt="Smiley face" width="700" height="700" style="clear:left">
+<p>Where the three models are,
+$$y_i(t) = \beta_1 SI_i + \beta_2 RR_i + \sum_{k=1}^3 \beta_{2k+1} { \beta_k(t, \lambda) \times RR_i } + b_{i0} + \sum_{k=1}^3b_{ik}\beta_k(t, \lambda) + \epsilon_i(t)    $$
+for the longitudinal process, and $M_1$, $M_2$, $M_3$ for the survival process:</p>
+<p>$M_1: h_i(t) = h_0(t)\exp{ \gamma_1 RR_i + \gamma_2 Age_i + \gamma_3 Female_i + \alpha_1 m_i(t)}$</p>
+<p>$M_2: h_i(t) = h_0(t)\exp{ \gamma_1RR_i + \gamma_2Age_i + \gamma_3Female_i + \alpha_1m_i(t)}$</p>
+<p>$M_3: h_i(t) = h_0(t)\exp{ \gamma_1RR_i + \gamma_2Age_i + \gamma_3Female_i + \alpha_1\int_0^tm_i(s)ds}$</p>
+<h2 id="5-simulation-data-analysis">5. Simulation Data Analysis</h2>
+<p>Some facts of the data:</p>
+<ol>
+<li>1000 patients have been followed up for 15 years</li>
+<li>Provide Longitudinal measurements at baseline and afterward at 14 random follow up times</li>
+<li>Simulated the longitudinal process using B-splines</li>
+<li>Simulated the survival process using Weibull model</li>
+<li>Simulate the censoring time dependents on treatment</li>
+</ol>
+<p>they used the same linear mixed effect with B-spline model to simulate the longitudinal process:
+$$y_i(t) = \beta_1Trt0_i + \beta_2Trt1_i + beta_3(t\times Trt0_i) + \beta_3(t \times Trt1_i) + \epsilon_i(t)$$
+and used survival model as follow to simuate the survival porcess:</p>
+<p>$\textbf{Scenario I:} \hspace{2mm} h_i(t) = h_0(t)\exp {\gamma_1Trt1_i + \alpha_1m_i(t) }$a
+$\textbf{Scenario II:} \hspace{2mm} h_i(t) = h_0(t)\exp {\gamma_1Trt1_i + \alpha_1m_i(t) + \alpha_2m'_i(t)}$
+$\textbf{Scenario III:} \hspace{2mm} h_i(t) = h_0(t)\exp {\gamma_1Trt1_i + \alpha_1\int_0^tm_i(s)ds }$</p>
+<h2 id="6-results">6. results</h2>
+<p>Joint modeling approaches outperform the landmark approaches when there is no misspecification on the time effect on the longitudinal process.
+Landmark approaches outperformed the joint models in a few cases when there is strong misspecification of the time effect.
+Misspecification of the functional form that links the two processes did not seem to particularly influence the performance of the joint modeling and landmark approaches.\cite{rizopoulos2017dynamic}\cite{rizopoulos2014r}\cite{rizopoulos2014combining}</p>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://hanchao-zhang.github.io/post/jointmodeling/&amp;text=Paper%20Review%20Time-dependent%20ROCs%20and%20AUCs%20for%20censored%20endpoints,%20dynamic%20prediction%20via%20joint%20modeling%20and%20landmarking" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://hanchao-zhang.github.io/post/jointmodeling/&amp;t=Paper%20Review%20Time-dependent%20ROCs%20and%20AUCs%20for%20censored%20endpoints,%20dynamic%20prediction%20via%20joint%20modeling%20and%20landmarking" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Paper%20Review%20Time-dependent%20ROCs%20and%20AUCs%20for%20censored%20endpoints,%20dynamic%20prediction%20via%20joint%20modeling%20and%20landmarking&amp;body=https://hanchao-zhang.github.io/post/jointmodeling/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://hanchao-zhang.github.io/post/jointmodeling/&amp;title=Paper%20Review%20Time-dependent%20ROCs%20and%20AUCs%20for%20censored%20endpoints,%20dynamic%20prediction%20via%20joint%20modeling%20and%20landmarking" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Paper%20Review%20Time-dependent%20ROCs%20and%20AUCs%20for%20censored%20endpoints,%20dynamic%20prediction%20via%20joint%20modeling%20and%20landmarking%20https://hanchao-zhang.github.io/post/jointmodeling/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://hanchao-zhang.github.io/post/jointmodeling/&amp;title=Paper%20Review%20Time-dependent%20ROCs%20and%20AUCs%20for%20censored%20endpoints,%20dynamic%20prediction%20via%20joint%20modeling%20and%20landmarking" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+  
+    
+    
+    
+      
+    
+    
+    
+    <div class="media author-card content-widget-hr">
+      
+        
+        <img class="avatar mr-3 avatar-square" src="/author/hanchao-zhang/avatar_hu04eeefaa75b7f64ecf79485f288902bc_732571_270x270_fill_q100_lanczos_center.jpg" alt="Hanchao Zhang">
+      
+
+      <div class="media-body">
+        <h5 class="card-title"><a href="https://hanchao-zhang.github.io/">Hanchao Zhang</a></h5>
+        <h6 class="card-subtitle">Ph.D. Student of Biostatistics, President of <a href="https://nyu-medicine-cssa.github.io/" target="_blank"> CSSA</a> at</h6>
+        <p class="card-text">My research interests include Fairness Machine Learning, Supervised and Semi-supervised Clustering Methods, Functional Data Analysis.</p>
+        <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:Hanchao.Zhang@aol.com" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/Hanchao-Zhang" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/citations?hl=en&amp;user=bePCCD8AAAAJ" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/hanchao-ted-zhang-670105b7/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/tedddddy_zhang" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/files/cv.pdf" >
+        <i class="ai ai-cv"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </div>
+  
+
+
+
+
+
+
+
+
+
+
+<div class="article-widget">
+  
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/post/fda/" rel="next">A Machine Learning Algothrim for Removing the Outliers in Functional Data</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/post/ocs/" rel="prev">Open Case Study Project Working Group</a>
+  </div>
+  
+</div>
+
+</div>
+
+
+
+
+
+  
+  
+
+
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.8/mermaid.min.js" integrity="sha256-lyWCDMnMeZiXRi7Zl54sZGKYmgQs4izcT7+tKc+KUBk=" crossorigin="anonymous" title="mermaid"></script>
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js" integrity="sha512-7t8APmYpzEsZP7CYoA7RfMPV9Bb+PJHa9x2WiUnDXZx3XHveuyWUtvNOexhkierl5flZ3tr92dP1mMS+SGlD+A==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks",
+        'slides' : "Slides"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.19912f59e37190f8d23e7f331b162e03.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+  </p>
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    Published with
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic Website Builder</a>
+    
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

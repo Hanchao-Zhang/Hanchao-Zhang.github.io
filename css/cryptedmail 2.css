@@ -1,0 +1,8 @@
+/*https://stackoverflow.com/questions/483212/effective-method-to-hide-email-from-spam-bots*/
+.cryptedmail:after {
+  content: attr(data-name) "@" attr(data-domain) "." attr(data-tld); 
+}
+/*
+USAGE:
+<a data-name="info" data-domain="test" data-tld="com" href="#" class="cryptedmail" onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld"></a>
+*/
