@@ -8,7 +8,9 @@ I am currently a Ph.D. student in the <a href="https://med.nyu.edu/departments-i
 
 In the summer of 2022, I had the opportunity to work as a Data Scientist Intern at <a href="https://about.google" target="_blank"> Google</a>. Prior to my Ph.D., I completed my master's degree in Biostatistics and Data Science from <a href="https://gradschool.weill.cornell.edu" target = "_blank"> Weill Cornell Graduate School of Biomedical Sciences</a>, <a href="https://www.cornell.edu" target = "_blank"> Cornell University</a>, and my bachelor's degree in International Finance from <a href="https://www.cueb.edu.cn" target = "_blank"> Capital University of Economics and Business</a>.
 
-Additionally, I am an alumnus of the <a href="https://opencasestudies.github.io/" target="_blank"> Open Case Study Project</a> at <a href="https://www.jhsph.edu/" target="_blank"> the Bloomberg School of Public Health </a> of <a href="https://www.jhu.edu/" target="_blank"> the Johns Hopkins University</a>.
+I am an alumnus of the <a href="https://opencasestudies.github.io/" target="_blank"> Open Case Study Project</a> at <a href="https://www.jhsph.edu/" target="_blank"> the Bloomberg School of Public Health </a> of <a href="https://www.jhu.edu/" target="_blank"> the Johns Hopkins University</a>.
+
+Additionally, I started on the path to becoming a professional swimmer at the age of 5. Since then, I've competed in and won a couple of regional and national championships.  I'm also an accomplished Chinese calligrapher whose work has been exhibited in the <a href="http://www.namoc.org/" target="_blank"> China Art Museum </a>中国美术馆(北京).
 
 
 ## Research Interests
@@ -31,7 +33,7 @@ Additionally, I am an alumnus of the <a href="https://opencasestudies.github.io/
 - **[Feb. 2023]** my collaboration paper *Low muscle mass is associated with a higher risk of all–cause and cardiovascular disease–specific mortality in cancer survivors* has been accepted by Nutrition.
 - **[Aug. 2021]** my collaboration paper *Validation of EHR medication fill data obtained through electronic linkage with pharmacies* has been accepted by the journal of managed care & specialty pharmacy.
 - **[Jan. 2021]** my collaboration paper *Quantitative evaluation of rejuvenation treatment of nasolabial fold wrinkles by regression model and 3D photography* has been accepted by the Journal of Cosmetic Dermatology.
-- **[Aug. 2019]** Accepted by Vilcek Institute of New York University.
+
 
 {% include_relative _includes/services.md %}
 

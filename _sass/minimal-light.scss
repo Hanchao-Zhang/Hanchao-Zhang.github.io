@@ -272,10 +272,10 @@ papertitle {
 
 .image.avatar img {
   border-radius: 0%;
-  width: 80%;
+  width: 90%;
   padding: 50px;
-  border: 1px solid #ddd;
-  padding: 3px;
+  border: 2px solid #ddd;
+  padding: 2px;
   box-shadow: 0 -1px 5px 1px rgba(200, 200, 200, 0.3);
 }
 
@@ -578,7 +578,7 @@ screen and (max-width: 960px) {
   .image.avatar img {
     border-radius: 0%;
     width: 117px;
-    padding: 20px;
+    padding: 3px;
   }
 
   #head1o2 {
@@ -639,8 +639,8 @@ screen and (max-width: 480px) {
 
   .image.avatar img {
     border-radius: 0%;
-    width: 95px;
-    padding: 20px;
+    width: 110px;
+    padding: 3px;
   }
 
   #head1o2 {
