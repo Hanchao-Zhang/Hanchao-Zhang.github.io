@@ -16,9 +16,9 @@ I am an alumnus of the <a href="https://opencasestudies.github.io/" target="_bla
 
 ## Research Interests
 
-- **Functional Data Analysis:** functional regression, function clustering methods
-- **High-Dimensional Statistics** matrix-valued regression and clustering
-- **Machine Learning:** fairness machine learning
+- **Functional Data Analysis:** functional regression, and clustering methods
+- **High-Dimensional Statistics** matrix-valued regression and clustering, principal positive semi-definite matrices
+- **Machine Learning:** fairness machine learning, penalization and augmentation methods
 
 
 <!-- {% include_relative _includes/publications.md %} -->
