@@ -174,5 +174,5 @@ Our project uses the source code from the following repositories:
 * [orderedlist/minimal](https://github.com/orderedlist/minimal)
 
 * [al-folio](https://github.com/alshedivat/al-folio)
-* 
+  
 * [minimal-light theme](https://github.com/yaoyao-liu/minimal-light.git)
