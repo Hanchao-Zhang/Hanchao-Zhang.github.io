@@ -30,7 +30,7 @@ body {
 
 @media (prefers-color-scheme: dark) {
   .social-icons a {
-    color: #3eb7f0 !important;
+    color: #b8b8b8 !important;
   }
 }
 
@@ -39,8 +39,8 @@ body {
 }
 
 .social-icons a:hover {
-  background-color: white;
-  color: black;
+  background-color: transparent;
+  color: transparent;
   transform: scale(1.3)
 }
 
@@ -66,7 +66,7 @@ body {
   }
 
   .social-icons a:hover {
-    background-color: #20212b;
+    background-color: transparent;
     color: black;
     transform: scale(1.2)
   }
@@ -216,12 +216,12 @@ papertitle {
 
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: #20212b;
-    color: #dadbdf;
+    background-color: #404040;
+    color: #eee6f3;
   }
 
   autocolor {
-    color: #dadbdf;
+    color: #eee6f3;
   }
 
   lightonly {
@@ -313,11 +313,11 @@ h2 {
   h4,
   h5,
   h6 {
-    color: rgb(62, 183, 240);
+    color: #d6d6d6;
   }
 
   h2 {
-    color: rgb(62, 183, 240);
+    color: #d6d6d6;
   }
 }
 
@@ -341,17 +341,17 @@ h1 {
 }
 
 a {
-  color: #57068c;
+  color: #7b5aa6;
   text-decoration: none;
 }
 
 a:hover {
-  color: #330662;
+  color: #ab82c5;
 }
 
 @media (prefers-color-scheme: dark) {
   a {
-    color: rgb(62, 183, 240);
+    color: #7b5aa6;
   }
 }
 
