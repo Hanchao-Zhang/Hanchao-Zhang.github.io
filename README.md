@@ -158,3 +158,21 @@ Our project uses the source code from the following repositories:
 * [orderedlist/minimal](https://github.com/orderedlist/minimal)
 
 * [al-folio](https://github.com/alshedivat/al-folio) -->
+
+
+## Acknowledgements
+
+[![LICENSE](https://img.shields.io/github/license/yaoyao-liu/minimal-light?style=flat-square&logo=creative-commons&color=EF9421)](https://github.com/yaoyao-liu/minimal-light/blob/main/LICENSE)
+
+*Here is the source code of my homepage. I build this website based on [minimal](https://github.com/orderedlist/minimal).*
+
+
+Our project uses the source code from the following repositories:
+
+* [pages-themes/minimal](https://github.com/pages-themes/minimal)
+
+* [orderedlist/minimal](https://github.com/orderedlist/minimal)
+
+* [al-folio](https://github.com/alshedivat/al-folio)
+* 
+* [minimal-light theme](https://github.com/yaoyao-liu/minimal-light.git)
