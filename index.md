@@ -10,7 +10,7 @@ In the summer of 2022, I had the opportunity to work as a Data Scientist Intern 
 
 I am an alumnus of the <a href="https://opencasestudies.github.io/" target="_blank"> Open Case Study Project</a> at <a href="https://www.jhsph.edu/" target="_blank"> the Bloomberg School of Public Health </a> of <a href="https://www.jhu.edu/" target="_blank"> the Johns Hopkins University</a>.
 
-Additionally, I started on the path to becoming a professional swimmer at the age of 5. Since then, I've competed in and won a couple of regional and national championships.  I'm also an accomplished Chinese calligrapher whose work has been exhibited in the <a href="http://www.namoc.org/" target="_blank"> China Art Museum </a>中国美术馆(北京).
+Additionally, I started on the path to becoming a professional swimmer at the age of 5. Since then, I've competed in and won a couple of regional and national championships.  I'm also an accomplished Chinese calligrapher, my work has been exhibited in top galleries and museums including the <a href="http://www.namoc.org/" target="_blank"> China Art Museum </a>中国美术馆(北京).
 
 
 ## Research Interests
