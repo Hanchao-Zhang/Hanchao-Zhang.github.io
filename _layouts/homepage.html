@@ -38,7 +38,10 @@
       {% endif %}
 
       <h1>{{ site.title }}</h1>
-
+      {% if site.subtitle %}
+      <h3>{{ site.subtitle }}</h3>
+      {% endif %}
+      
       {% if site.position %}
       <position style="font-size:1.10rem;">{{ site.position }}</position>
       <br>
