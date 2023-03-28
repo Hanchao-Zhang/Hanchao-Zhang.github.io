@@ -23,10 +23,10 @@ I am an alumnus of the <a href="https://opencasestudies.github.io/" target="_bla
 
 <!-- {% include_relative _includes/publications.md %} -->
 
-{% include_relative _includes/projects.md %}
-
 
 {% include_relative _includes/talks.md %}
+
+{% include_relative _includes/projects.md %}
 
 
 ## Collaboration
