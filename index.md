@@ -17,11 +17,14 @@ I am an alumnus of the <a href="https://opencasestudies.github.io/" target="_bla
 ## Research Interests
 
 - **Functional Data Analysis:** functional regression, and clustering methods
-- **High-Dimensional Statistics:** matrix-valued regression and clustering, principal positive semi-definite matrices
+- **High-Dimensional Statistics:** matrix-valued regression and clustering, positive semi-definite matrices estimations
 - **Machine Learning:** fairness machine learning, penalization and augmentation methods
 
 
 <!-- {% include_relative _includes/publications.md %} -->
+
+{% include_relative _includes/projects.md %}
+
 
 {% include_relative _includes/talks.md %}
 
@@ -31,9 +34,9 @@ I am an alumnus of the <a href="https://opencasestudies.github.io/" target="_bla
 <!-- - **[Feb. 2020]** Our paper about incremental learning is accepted to CVPR 2020.
 - **[Feb. 2020]** We will host the ACM Multimedia Asia 2020 conference in Singapore!
 - **[Sept. 2019]** Our paper about few-shot learning is accepted to NeurIPS 2019. -->
-- **[Feb. 2023]** my collaboration paper *Low muscle mass is associated with a higher risk of all–cause and cardiovascular disease–specific mortality in cancer survivors* has been accepted by Nutrition.
-- **[Aug. 2021]** my collaboration paper *Validation of EHR medication fill data obtained through electronic linkage with pharmacies* has been accepted by the journal of managed care & specialty pharmacy.
-- **[Jan. 2021]** my collaboration paper *Quantitative evaluation of rejuvenation treatment of nasolabial fold wrinkles by regression model and 3D photography* has been accepted by the Journal of Cosmetic Dermatology.
+- **[Feb. 2023]** *Low muscle mass is associated with a higher risk of all–cause and cardiovascular disease–specific mortality in cancer survivors* has been accepted by **Nutrition**.
+- **[Aug. 2021]** *Validation of EHR medication fill data obtained through electronic linkage with pharmacies* has been accepted by the **Journal of Managed Care & Specialty Pharmacy**.
+- **[Jan. 2021]** *Quantitative evaluation of rejuvenation treatment of nasolabial fold wrinkles by regression model and 3D photography* has been accepted by the **Journal of Cosmetic Dermatology**.
 
 
 {% include_relative _includes/services.md %}
