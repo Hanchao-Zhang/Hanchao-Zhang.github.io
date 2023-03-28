@@ -11,5 +11,5 @@
 <h4 style="margin:0 10px 0;">Journal Reviewers</h4>
 
 <ul style="margin:0 0 20px;">
-  <li><a href="https://www.frontiersin.org"><autocolor>Frontiers in Surgery</autocolor></a></li>
+  <li><a href="https://www.frontiersin.org" target="_blank"><autocolor>Frontiers in Surgery</autocolor></a></li>
 </ul>
