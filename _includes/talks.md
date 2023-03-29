@@ -15,7 +15,7 @@
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
     <div class="title"><a href="https://www.enar.org/meetings/spring2023/program/scientific_program.pdf" target="_blank">Clustering Positive Semi-Definite Matrices: A Metric Learning Approach</a></div>
     <div class="author"><strong>Hanchao Zhang</strong>, Thaddeus Tarpey</div>
-    <div class="periodical"><em>the Eastern North American Region Statistical Meeting <strong>(ENAR)</strong>, 2023.</em></div>
+    <div class="periodical"><em>the International Biometric Society Eastern North American Region <strong>(ENAR)</strong>, 2023.</em></div>
     <div class="links">
       <a href="assets/files/ENAR2023.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Slides</a>
       <a href="https://github.com/Hanchao-Zhang" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
