@@ -20,7 +20,7 @@ Outside of academia, I began my journey as a professional swimmer at the age of 
 
 - **Functional Data Analysis:** functional regression, and clustering methods
 - **High-Dimensional Statistics:** matrix-valued regression and clustering, positive semi-definite matrices estimations
-- **Machine Learning:** fairness machine learning, penalization and augmentation methods
+- **Machine Learning:** fairness AI, penalization and augmentation methods
 
 
 <!-- {% include_relative _includes/publications.md %} -->
