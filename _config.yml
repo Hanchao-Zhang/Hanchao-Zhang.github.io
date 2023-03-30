@@ -4,8 +4,13 @@ url: "hanchaozhang.xyz "
 title: Hanchao Zhang
 subtitle:
 position: Ph.D. Candidate
-affiliation: Grossman School of Medicine,  New York University
-email: Hanchao.Zhang@nyulangone.org
+# subposition: President of the Chinese Student and Scholar Association (CSSA)
+affiliation: New York University
+subaffiliation: Grossman School of Medicine  
+affiliation_link: https://www.nyu.edu
+subaffiliation_link: https://med.nyu.edu/research/vilcek-institute-graduate-biomedical-sciences/
+email: Hanchao.Zhang@nyu.edu
+
 
 # Search Engine Optimization (SEO)
 # The following information is used to improve the website traffic from search engines, e.g., Google.
@@ -29,7 +34,7 @@ favicon_dark: ./assets/img/favicon-dark.png
 
 # Footnote
 # You may use the option to disable the footnote, "Powered by Jekyll and Minimal Light theme."
-enable_footnote: true
+enable_footnote: false
 
 # Google Analytics ID
 # Please remove this if you don't use Google Analytics

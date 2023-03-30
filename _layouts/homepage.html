@@ -46,14 +46,28 @@
       <position style="font-size:1.10rem;">{{ site.position }}</position>
       <br>
       {% endif %}
+      {% if site.subposition %}
+      <position style="font-size:1.10rem;">{{ site.subposition }}</position>
+      <br>
+      {% endif %}
+      {% if site.subaffiliation %}
+      <a href="{{ site.subaffiliation_link }}" rel="noopener" target="_blank">
+        <autocolor>{{ site.subaffiliation }},</autocolor>
+      </a>
+      <br>
+      {% endif %}
       {% if site.affiliation %}
-      <a href="{{ site.affiliation_link }}" rel="noopener">
+      <a href="{{ site.affiliation_link }}" rel="noopener" target="_blank">
         <autocolor>{{ site.affiliation }}</autocolor>
       </a>
       <br>
       {% endif %}
       {% if site.email %}
-      <email>{{ site.email }}</email>
+      <a href="mailto: {{ site.email }}" style="color:#6d6d6d">
+        <email>
+          {{ site.email }}
+        </email>
+      </a>
       {% endif %}
 
       <br>
