@@ -221,7 +221,7 @@ papertitle {
   }
 
   autocolor {
-    color: #eee6f3;
+    color: #ab82c5;
   }
 
   lightonly {
@@ -290,7 +290,12 @@ h3 {
   margin: 0 0 0px;
 }
 
-h4,
+h4 {
+  font-weight: 400;
+  color: #545353;
+  margin: 0 0 5px;
+}
+
 
 h5,
 h6 {
@@ -321,7 +326,12 @@ h2 {
     margin: 0 0 20px;
   }
 
-  h4,
+  h4 {
+    font-weight: 400;
+    color: #d6d6d6;
+    margin: 0 0 5px;
+  }
+
   h5,
   h6 {
     color: #d6d6d6;
@@ -329,6 +339,12 @@ h2 {
 
   h2 {
     color: #d6d6d6;
+  }
+
+  email {
+    font-size: 14px;
+    color: #d6d6d6;
+    font-family: "Ubuntu Mono";
   }
 }
 

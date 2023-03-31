@@ -62,6 +62,11 @@
       </a>
       <br>
       {% endif %}
+      {% if site.address %}
+      <a href="{{ site.address_link }}" rel="noopener" target="_blank">
+        <h4>{{ site.address }}</h4>
+      </a>
+      {% endif %}
       {% if site.email %}
       <a href="mailto: {{ site.email }}" style="color:#6d6d6d">
         <email>
