@@ -34,7 +34,11 @@
     <header>
 
       {% if site.avatar %}
-      <a class="image avatar"><img src="{{ site.avatar }}" alt="avatar" /></a>
+      <a class="image avatar"><img src="{{ site.avatar }}" alt="avatar" /> </a>
+      {% endif %}
+      <br>
+      {% if site.logo %}
+      <a class="image logo"><img src="{{ site.logo }}" alt="logo" /></a>
       {% endif %}
 
       <h1>{{ site.title }}</h1>
