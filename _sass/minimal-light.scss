@@ -15,6 +15,10 @@ body {
   align-items: center;
 }
 
+a.no-color {
+  color: unset !important;
+}
+
 .social-icons a {
   display: inline-block;
   height: 2.4rem;

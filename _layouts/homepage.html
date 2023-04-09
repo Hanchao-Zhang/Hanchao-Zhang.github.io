@@ -51,7 +51,9 @@
       <br>
       {% endif %}
       {% if site.subposition %}
-      <position style="font-size:1.10rem;">{{ site.subposition }}</position>
+      <a href="{{ site.subposition_link }}" class="no-color" rel="noopener" target="_blank">
+        <position style="font-size:0.95rem">{{ site.subposition }}</position>
+      </a>
       <br>
       {% endif %}
       {% if site.subaffiliation %}

@@ -2,9 +2,10 @@ url: "hanchaozhang.xyz "
 # baseurl: /Hanchao-Zhang.github.io
 # Basic Information 
 title: Hanchao Zhang
-subtitle:
+# subtitle:
 position: Ph.D. Candidate
-# subposition: President of the Chinese Student and Scholar Association (CSSA)
+subposition: President of the Chinese Student and Scholar Association (CSSA)
+subposition_link: https://nyu-medicine-cssa.github.io
 affiliation: New York University
 subaffiliation: Grossman School of Medicine  
 affiliation_link: https://www.nyu.edu
