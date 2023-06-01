@@ -14,22 +14,23 @@ Prior to joining the Ph.D. program, I completed my master's degree in Biostatist
 <!-- 
 I am an alumnus of the <a href="https://opencasestudies.github.io/" target="_blank"> Open Case Study Project</a> at <a href="https://www.jhsph.edu/" target="_blank"> the Bloomberg School of Public Health </a> of <a href="https://www.jhu.edu/" target="_blank"> the Johns Hopkins University</a>. -->
 
-Outside of academia, I began my journey as a professional swimmer at the age of 5 and went on to achieve several regional and national championships. I'm also passionate about Chinese calligraphy, and my artwork has been exhibited in top galleries and museums including the <a href="http://www.namoc.org/" target="_blank"> National Art Museum of China (Beijing)</a>. In addition to calligraphy and swimming, I am also interested in oil painting, aeromodelling, and playing the Erhu, a traditional Chinese string instrument.
+Outside of academia, I began my journey as a professional swimmer at the age of 5 and went on to achieve several regional and national championships. I'm also passionate about Chinese calligraphy, and my artwork has been exhibited in top galleries and museums including the <a href="http://www.namoc.org/" target="_blank"> National Art Museum of China (Beijing)</a>. In addition, I am also interested in oil painting, and aeromodelling.
 
 
 ## Research Interests
-
-- **Machine Learning:** fairness AI, penalization and augmentation methods
+- **Manifold Learning:** manifold learning for Hermitian matrices
 - **Functional Data Analysis:** functional regression, and clustering methods
+- **Machine Learning:** fairness AI, penalization and augmentation methods, and deep learning
 - **High-Dimensional Statistics:** matrix-valued regression and clustering, positive semi-definite matrices estimations
 
-
-<!-- {% include_relative _includes/publications.md %} -->
 
 
 {% include_relative _includes/talks.md %}
 
 {% include_relative _includes/projects.md %}
+
+<!-- {% include_relative _includes/publications.md %} -->
+
 
 
 ## Collaboration
@@ -41,6 +42,8 @@ Outside of academia, I began my journey as a professional swimmer at the age of 
 - **[Aug. 2021]** <a href="https://www.jmcp.org/doi/full/10.18553/jmcp.2021.27.10.1482" target="_blank">*Validation of EHR medication fill data obtained through electronic linkage with pharmacies*</a> has been accepted by the **Journal of Managed Care & Specialty Pharmacy**.
 - **[Jan. 2021]** <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/jocd.13486" target="_blank">*Quantitative evaluation of rejuvenation treatment of nasolabial fold wrinkles by regression model and 3D photography*</a> has been accepted by the **Journal of Cosmetic Dermatology**.
 
+## Awards
+- **[May. 2023]** <a href="https://gsas.nyu.edu/admissions/financial-aid/graduate-school-fellowships-and-assistantships.html" target="_blank">*MacCracken Awards*</a>
 
 
 {% include_relative _includes/services.md %}

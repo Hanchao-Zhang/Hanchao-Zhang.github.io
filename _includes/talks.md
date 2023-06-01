@@ -8,6 +8,33 @@
 <div class="pub-row">
 
   <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
+    <img src="assets/img/TTHS2023.png" class="teaser img-fluid z-depth-1">
+    <abbr class="badge">TTHS</abbr>
+  </div>
+
+  <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
+    <div class="title"><a href="assets/files/TTH Program.pdf" target="_blank">K-Tensors: Clustering Postive Semi-Definite Matrices</a></div>
+    <div class="author"><strong>Hanchao Zhang</strong>, Thaddeus Tarpey</div>
+    <div class="periodical"><em>Thomas R. Ten Have Symposium <strong>(TTHS)</strong>, Harvard University, 2023, Cambridge, MA.</em></div>
+    <div class="links">
+      <a href="assets/files/TenHave2023.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Poster</a>
+      <a href="https://github.com/Hanchao-Zhang" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
+      <a href="assets/files/TTH Program.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Project Page</a>
+      <a href="assets/files/ENAR2023.bib" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">BibTex</a>
+      <strong><i style="color:#7b5aa6">Oral Presentation</i></strong>
+    </div>
+  </div>
+</div>
+</li>
+  
+<br>
+
+
+
+<li>
+<div class="pub-row">
+
+  <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
     <img src="assets/img/ENAR2023.png" class="teaser img-fluid z-depth-1">
     <abbr class="badge">ENAR</abbr>
   </div>
@@ -15,7 +42,7 @@
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
     <div class="title"><a href="https://www.enar.org/meetings/spring2023/program/scientific_program.pdf" target="_blank">Clustering Positive Semi-Definite Matrices: A Metric Learning Approach</a></div>
     <div class="author"><strong>Hanchao Zhang</strong>, Thaddeus Tarpey</div>
-    <div class="periodical"><em>the International Biometric Society Eastern North American Region <strong>(ENAR)</strong>, 2023.</em></div>
+    <div class="periodical"><em>the International Biometric Society Eastern North American Region <strong>(ENAR)</strong>, 2023, Nashville, TN.</em></div>
     <div class="links">
       <a href="assets/files/ENAR2023.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Slides</a>
       <a href="https://github.com/Hanchao-Zhang" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
@@ -41,7 +68,7 @@
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
     <div class="title"><a href="https://ww2.amstat.org/meetings/jsm/2022/onlineprogram/AbstractDetails.cfm?abstractid=323029" target="_blank">Optimal Transformations of High-Dimensional Functional Data for Clustering Methods</a></div>
     <div class="author"><strong>Hanchao Zhang</strong>, Thaddeus Tarpey</div>
-    <div class="periodical"><em>the Joint Statistical Meeting <strong>(JSM)</strong>, 2022.</em></div>
+    <div class="periodical"><em>the Joint Statistical Meeting <strong>(JSM)</strong>, 2022, Washington, D.C.</em></div>
     <div class="links">
       <a href="assets/files/JSM2022.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Slides</a>
       <a href="https://github.com/Hanchao-Zhang" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
@@ -67,7 +94,7 @@
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
     <div class="title"><a href="https://ww2.amstat.org/meetings/jsm/2021/onlineprogram/AbstractDetails.cfm?abstractid=317415" target="_blank">Optimal Linear Transformations of Functional Data for Clustering Methods</a></div>
     <div class="author"><strong>Hanchao Zhang</strong>, Thaddeus Tarpey</div>
-    <div class="periodical"><em>the Joint Statistical Meeting <strong>(JSM)</strong>, 2021.</em></div>
+    <div class="periodical"><em>the Joint Statistical Meeting <strong>(JSM)</strong>, 2021, Online.</em></div>
     <div class="links">
       <a href="assets/files/JSM2021.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Slides</a>
       <a href="https://github.com/Hanchao-Zhang" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
