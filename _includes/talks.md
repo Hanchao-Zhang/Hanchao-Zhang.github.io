@@ -13,7 +13,7 @@
   </div>
 
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
-    <div class="title"><a href="assets/files/TTH Program.pdf" target="_blank">K-Tensors: Clustering Postive Semi-Definite Matrices</a></div>
+    <div class="title"><a href="assets/files/TenHave2023.pdf" target="_blank">K-Tensors: Clustering Postive Semi-Definite Matrices</a></div>
     <div class="author"><strong>Hanchao Zhang</strong>, Thaddeus Tarpey</div>
     <div class="periodical"><em>Thomas R. Ten Have Symposium <strong>(TTHS)</strong>, Harvard University, 2023, Cambridge, MA.</em></div>
     <div class="links">
@@ -40,7 +40,7 @@
   </div>
 
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
-    <div class="title"><a href="https://www.enar.org/meetings/spring2023/program/scientific_program.pdf" target="_blank">Clustering Positive Semi-Definite Matrices: A Metric Learning Approach</a></div>
+    <div class="title"><a href="assets/files/ENAR2023.pdf" target="_blank">Clustering Positive Semi-Definite Matrices: A Metric Learning Approach</a></div>
     <div class="author"><strong>Hanchao Zhang</strong>, Thaddeus Tarpey</div>
     <div class="periodical"><em>the International Biometric Society Eastern North American Region <strong>(ENAR)</strong>, 2023, Nashville, TN.</em></div>
     <div class="links">
@@ -66,7 +66,7 @@
   </div>
 
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
-    <div class="title"><a href="https://www.publichealth.columbia.edu/research/programs/functional-data-analysis-working-group" target="_blank">Functional Data Clustering and Generated Effect Modifier on Functional and Penalized Functional Regression</a></div>
+    <div class="title"><a href="assets/files/JSM2022.pdf" target="_blank">Functional Data Clustering and Generated Effect Modifier on Functional and Penalized Functional Regression</a></div>
     <div class="author"><strong>Hanchao Zhang</strong>, Thaddeus Tarpey</div>
     <div class="periodical"><em>the Functional Data Analysis Working Group <strong>(FDAWG)</strong>, Columbia University, 2022, New York, NY.</em></div>
     <div class="links">
@@ -91,7 +91,7 @@
   </div>
 
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
-    <div class="title"><a href="https://ww2.amstat.org/meetings/jsm/2022/onlineprogram/AbstractDetails.cfm?abstractid=323029" target="_blank">Optimal Transformations of High-Dimensional Functional Data for Clustering Methods</a></div>
+    <div class="title"><a href="assets/files/JSM2022.pdf" target="_blank">Optimal Transformations of High-Dimensional Functional Data for Clustering Methods</a></div>
     <div class="author"><strong>Hanchao Zhang</strong>, Thaddeus Tarpey</div>
     <div class="periodical"><em>the Joint Statistical Meeting <strong>(JSM)</strong>, 2022, Washington, D.C.</em></div>
     <div class="links">
@@ -117,7 +117,7 @@
   </div>
 
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
-    <div class="title"><a href="https://ww2.amstat.org/meetings/jsm/2021/onlineprogram/AbstractDetails.cfm?abstractid=317415" target="_blank">Optimal Linear Transformations of Functional Data for Clustering Methods</a></div>
+    <div class="title"><a href="assets/files/JSM2021.pdf" target="_blank">Optimal Linear Transformations of Functional Data for Clustering Methods</a></div>
     <div class="author"><strong>Hanchao Zhang</strong>, Thaddeus Tarpey</div>
     <div class="periodical"><em>the Joint Statistical Meeting <strong>(JSM)</strong>, 2021, Online.</em></div>
     <div class="links">
