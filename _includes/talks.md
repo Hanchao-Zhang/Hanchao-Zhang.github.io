@@ -18,7 +18,7 @@
     <div class="periodical"><em>Thomas R. Ten Have Symposium <strong>(TTHS)</strong>, Harvard University, 2023, Cambridge, MA.</em></div>
     <div class="links">
       <a href="assets/files/TenHave2023.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Poster</a>
-      <a href="https://github.com/Hanchao-Zhang" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
+      <a href="https://github.com/Hanchao-Zhang/K-Tensors" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
       <a href="assets/files/TTH Program.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Project Page</a>
       <a href="assets/files/ENAR2023.bib" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">BibTex</a>
       <strong><i style="color:#7b5aa6">Poster Presentation</i></strong>
