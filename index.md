@@ -18,9 +18,9 @@ Outside of academia, I began my journey as a professional swimmer at the age of 
 
 
 ## Research Interests
-- **Manifold Learning:** manifold learning for Hermitian matrices
+- **Manifold Learning:** positive semi-definite manifolds learning
+- **Machine Learning:** fairness AI, penalization and augmentation methods
 - **Functional Data Analysis:** functional regression, and clustering methods
-- **Machine Learning:** fairness AI, penalization and augmentation methods, and deep learning
 - **High-Dimensional Statistics:** matrix-valued regression and clustering, positive semi-definite matrices estimations
 
 
