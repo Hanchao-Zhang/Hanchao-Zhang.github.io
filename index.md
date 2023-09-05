@@ -16,11 +16,11 @@ Prior to joining the Ph.D. program, I completed my master's degree in Biostatist
 - **Energy Transition:** matrix-valued regression and clustering, positive semi-definite matrices estimations
 
 
-<!-- {% include_relative _includes/publications.md %} -->
+{% include_relative _includes/publications.md %}
 
-{% include_relative _includes/projects.md %}
+<!-- {% include_relative _includes/projects.md %} -->
 
-{% include_relative _includes/talks.md %}
+<!-- {% include_relative _includes/talks.md %} -->
 
 
 
@@ -38,8 +38,9 @@ Prior to joining the Ph.D. program, I completed my master's degree in Biostatist
 - **[Jan. 2021]** <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/jocd.13486" target="_blank">*Quantitative evaluation of rejuvenation treatment of nasolabial fold wrinkles by regression model and 3D photography*</a> has been accepted by the **Journal of Cosmetic Dermatology**.
 
 ## Awards
-- **[May. 2023]** <a href="https://gsas.nyu.edu/admissions/financial-aid/graduate-school-fellowships-and-assistantships.html" target="_blank">*MacCracken Awards*</a>
-
+- **[Dec. 2022]** <a href="https://kenkennedy.rice.edu/funding/sponsored-fellowships" target="_blank">*Scott Morton Memorial Graduate Fellowship*</a>
+- **[Oct. 2022]** <a href="https://twitter.com/CMAS_Center/status/1582778652256657411?s=20&t=h5vFzhI_B-fkoFcN5-F0ow" target="_blank">*CMAS Conference Student Poster Award *</a>
+- **[Feb. 2022]** H.W. Reeves Endowed Scholarship*</a>
 
 {% include_relative _includes/services.md %}
 
