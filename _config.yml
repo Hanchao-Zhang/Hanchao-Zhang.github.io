@@ -1,18 +1,18 @@
-url: "hanchaozhang.xyz "
-# baseurl: /Hanchao-Zhang.github.io
+url: "casinocullen.github.io "
+# baseurl: /casinocullen.github.io
 # Basic Information 
-title: Hanchao Zhang
+title: Chen Chen
 # subtitle:
 position: Ph.D. Candidate
 # subposition: Chair of the Chinese Student and Scholar Association (CSSA)
 subposition_link: https://nyu-medicine-cssa.github.io
-affiliation: New York University
-subaffiliation: Grossman School of Medicine  
-affiliation_link: https://www.nyu.edu
-subaffiliation_link: https://med.nyu.edu/research/vilcek-institute-graduate-biomedical-sciences/
-email: Hanchao.Zhang@nyu.edu
-address: 180 Madision Ave, Suite 5-31C, New York, NY 10016
-address_link: https://goo.gl/maps/aQZfmiKjQmqbDsVY9
+affiliation: Rice University
+subaffiliation: George R. Brown School of Engineering  
+affiliation_link: https://www.rice.edu
+subaffiliation_link: https://cee.rice.edu/
+email: cc143.rice.edu
+address: 6100 Main St, 220 Ryon Lab, Houston, TX 77005
+address_link: https://goo.gl/maps/4VRYNCERga68zFEo8
 
 
 
@@ -24,17 +24,17 @@ canonical: https://minimal-light-theme.yliu.me/
 
 # Links 
 # If you don't need one of them, you may delete the corresponding line.
-google_scholar: https://scholar.google.com/citations?user=bePCCD8AAAAJ&hl=en
-cv_link: assets/files/HanchaoZhangCV.pdf
-github_link: https://github.com/Hanchao-Zhang
-linkedin: https://www.linkedin.com/in/hanchao-ted-zhang-670105b7/?locale=en_US
-twitter: https://twitter.com/tedddddy_zhang
+google_scholar: https://scholar.google.com/citations?user=u1gT7eYAAAAJ&hl=en
+cv_link: assets/files/CV_Chen.pdf
+github_link: https://github.com/casinocullen
+linkedin: https://www.linkedin.com/in/chen-chen-1b87375a/
+twitter: https://twitter.com/chen_chen_rice
 
 # Images (e.g., your profile picture and your website's favicon) 
 # "favicon" and "favicon_dark" are used for the light and dark modes, respectively. 
 avatar: ./assets/img/avatar.jpg
 # logo: ./assets/img/logo.png
-favicon: ./assets/img/favicon.png
+favicon: ./assets/img/avatar.png
 favicon_dark: ./assets/img/favicon-dark.png
 
 # Footnote
@@ -43,7 +43,7 @@ enable_footnote: false
 
 # Google Analytics ID
 # Please remove this if you don't use Google Analytics
-google_analytics: UA-111540567-4
+# google_analytics: UA-111540567-4
 
 # Use this project as a remote theme for GitHub Pages
 # See the guide here: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll
