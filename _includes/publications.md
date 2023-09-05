@@ -7,7 +7,7 @@
 <div class="pub-row">
 
   <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
-    <img src="assets/img/nips2023.png" class="teaser img-fluid z-depth-1">
+    <img src="assets/img/bc_cover.jpeg" class="teaser img-fluid z-depth-1">
     <abbr class="badge">arXiv</abbr>
   </div>
 
@@ -17,7 +17,7 @@
     <div class="periodical"><em>MDPI <strong>(arXiv)</strong>, Feb. 2022.</em></div>
     <div class="links">
     <a href="https://www.mdpi.com/2073-4433/13/3/385#" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Website</a>
-      <a href="./assets/assets/atmosphere-13-00385-v2.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
+      <a href="./assets/files/atmosphere-13-00385-v2.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
       <a href="https://github.com/casinocullen/proj-gas_flaring_public" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">GitHub</a>
     </div>
   </div>
@@ -28,7 +28,7 @@
 <div class="pub-row">
 
   <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
-    <img src="assets/img/nips2023.png" class="teaser img-fluid z-depth-1">
+    <img src="assets/img/ship_cover.jpeg" class="teaser img-fluid z-depth-1">
     <abbr class="badge">arXiv</abbr>
   </div>
 
