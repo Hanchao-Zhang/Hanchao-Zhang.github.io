@@ -13,7 +13,7 @@ My research are highly focusing on marco energy transition and modeling, with in
 
 ## Research Interests
 - **Electric System Modeling:** macro grid capacity expansion, energy reliablity  
-- **Energy Transition:** switch from fossil fuel to renewable energy to meet the decarbonization goal
+- **Energy Transition:** roadmaps from fossil fuel to renewable energy
 - **Machine Learning:** fairness AI, penalization and augmentation methods
 - **Data Science:** functional regression, and clustering methods
 
