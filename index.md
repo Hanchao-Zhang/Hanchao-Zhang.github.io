@@ -21,10 +21,10 @@ My research are highly focusing on marco energy transition and modeling, with in
 {% include_relative _includes/papers.md %}
 
 
-## Previous Experience
-- **[2022-2022]** <a href="https://www.edpr.com/en" target="_blank">EDP Renewables (EDPR)</a>
-- **[2019-2021]** <a href="https://ruralinnovation.us" target="_blank">Center on Rural Innovation (CORI)</a>
-- **[2018-2019]** <a href="https://theicct.org/" target="_blank">International Council on Clean Transportation (ICCT)</a>
+## Experience
+- **[2022-2022]** Summer Associate @ <a href="https://www.edpr.com/en" target="_blank">EDP Renewables (EDPR)</a>
+- **[2019-2021]** Lead Data Scientist @ <a href="https://ruralinnovation.us" target="_blank">Center on Rural Innovation (CORI)</a>
+- **[2018-2019]** Marine Research Fellow @ <a href="https://theicct.org/" target="_blank">International Council on Clean Transportation (ICCT)</a>
 
 
 ## Awards
