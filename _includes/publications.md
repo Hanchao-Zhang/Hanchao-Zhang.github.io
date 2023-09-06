@@ -8,7 +8,7 @@
 
   <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
     <img src="assets/img/bc_cover.jpeg" class="teaser img-fluid z-depth-1">
-    <abbr class="badge">arXiv</abbr>
+    <abbr class="badge">Atmosphere</abbr>
   </div>
 
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
@@ -29,7 +29,7 @@
 
   <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
     <img src="assets/img/ship_cover.jpeg" class="teaser img-fluid z-depth-1">
-    <abbr class="badge">arXiv</abbr>
+    <abbr class="badge">GeoHealth</abbr>
   </div>
 
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">

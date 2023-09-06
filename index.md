@@ -39,8 +39,8 @@ Prior to joining the Ph.D. program, I completed my master's degree in Biostatist
 
 ## Awards
 - **[Dec. 2022]** <a href="https://kenkennedy.rice.edu/funding/sponsored-fellowships" target="_blank">*Scott Morton Memorial Graduate Fellowship*</a>
-- **[Oct. 2022]** <a href="https://twitter.com/CMAS_Center/status/1582778652256657411?s=20&t=h5vFzhI_B-fkoFcN5-F0ow" target="_blank">*CMAS Conference Student Poster Award *</a>
-- **[Feb. 2022]** H.W. Reeves Endowed Scholarship
+- **[Oct. 2022]** <a href="https://twitter.com/CMAS_Center/status/1582778652256657411?s=20&t=h5vFzhI_B-fkoFcN5-F0ow" target="_blank">*CMAS Conference Student Poster Award*</a>
+- **[Feb. 2022]** *H.W. Reeves Endowed Scholarship*
 
 {% include_relative _includes/services.md %}
 
