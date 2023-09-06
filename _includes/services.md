@@ -9,7 +9,7 @@
 </ul> -->
 
 
-<h4 style="margin:0 10px 0;">Membership & Activities</h4>
+<h4 style="margin:0 10px 0;">Activities</h4>
 
 <ul style="margin:0 0 20px;">
   <li><strong>[2023-present]</strong> Vice President of Rice CEVE Graduate Student Association (GSA)</li>

@@ -1,0 +1,293 @@
+<!-- Travel -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD -->
+<head id="top">
+    <meta charset="UTF-8">
+    <title>Travel · Zain Khoja</title>
+    <meta name="Description" content="Zain Khoja is a designer and student at Cornell. He's currently a Design Systems Intern at GitHub.">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/hover-min.css">
+
+    <!-- Javascript -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+        /* Back button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('.back').removeClass('no-display');
+          } else {
+              $('.back').addClass('no-display');
+          }
+        });
+        
+        /* Forward button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('.forward').removeClass('no-display');
+          } else {
+              $('.forward').addClass('no-display');
+          }
+        });
+        
+        /* Scroll button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('.scroll-to-top').removeClass('no-display');
+          } else {
+              $('.scroll-to-top').addClass('no-display');
+          }
+        });
+
+        /* Smooth Scrolling */
+        $(document).ready(function(){
+          $("a").on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 500, function(){
+                    window.location.hash = hash;
+                });
+            }
+          });
+        });
+    </script>
+
+    <!-- Webpage Icons -->
+    <link rel="icon" type="image/x-icon" href="zk-favicon.ico"/>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-89012104-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-89012104-2');
+    </script>
+
+    <!-- Twitter Preview -->
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:site" content="@zainkho"/>
+    <meta name="twitter:creator" content="@zainkho"/>
+    <meta name="twitter:title" content="Zain Khoja" />
+    <meta name="twitter:description" content="Zain Khoja is a designer and student at Cornell."/>
+    <meta name="twitter:image:src" content="https://zainkho.com/zk-screenshot.png"/>
+</head>
+
+<body class="grid">
+    <!-- Header -->
+    <header class="c12">
+        <!-- Nav -->
+        <div class="hero">
+            <div class="header">
+                <a href="/"><img alt="Zain Khoja logo" src="zk-logo.svg" class="zk-logo"></a>
+                <h3 class="medium content-web">Zain Khoja</h3>
+                <nav class="nav">
+                    <h5 class="option"><a href="/">Work</a></h5>
+                    <h5 class="option"><a href="about">About</a></h5>
+                    <h5 class="option selected">Travel</h5>
+                    <h5 class="option"><a href="zainkho-resume.pdf" aria-label="Zain Khoja reseume" target="_blank" rel="noopener">Resume</a></h5>
+                </nav>
+            </div>
+
+            <!-- Title -->
+            <div class="title">
+                <h1 class="content-web emoji">🧳</h1>
+                <div>
+                    <h1 class="content-mobile">🧳</h1>
+                    <h1 class="travel-title">Travel.<br>
+                    <span class="medium">Shot on iPhone.</span></h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main class="c12 main">
+        <!-- Athens -->
+        <div class="section">
+            <h2 class="city city-athens">Athens, <span class="medium">Greece</span></h2>
+            <div class="scroll">
+                <img alt="Acropolis, Athens, Greece" src="work/travel/athens1.jpg" class="photo">
+            </div>
+        </div>
+
+        <!-- Austin -->
+        <div class="section">
+            <h2 class="city city-austin">Austin, <span class="medium">Texas</span></h2>
+            <div class="scroll">
+                <img alt="The Drag, Austin, Texas" src="work/travel/austin1.jpg" class="photo">
+            </div>
+        </div>
+
+        <!-- Cairo -->
+        <div class="section">
+            <h2 class="city city-cairo">Cairo, <span class="medium">Egypt</span></h2>
+            <div class="scroll">
+                <img alt="Pyramids of Giza, Al Ahram, Egypt" src="work/travel/cairo1.jpg" class="photo">
+                <img alt="Al-Ahzar Park, Wasat Al Qahera, Egypt" src="work/travel/cairo2.jpg" class="photo">
+            </div>
+        </div>
+
+        <!-- Cambridge -->
+        <div class="section">
+            <h2 class="city city-cambridge">Cambridge, <span class="medium">Massachusetts</span></h2>
+            <div class="scroll">
+                <img alt="Massachusetts Institute of Technology, Cambridge, Massachusetts" src="work/travel/cambridge1.jpg" class="photo">
+                <img alt="Harvard Yard, Cambridge, Massachusetts" src="work/travel/cambridge2.jpg" class="photo">
+            </div>
+        </div>
+
+        <!-- Chicago -->
+        <div class="section">
+            <h2 class="city city-chicago">Chicago, <span class="medium">Illinois</span></h2>
+            <div class="scroll">
+                <img alt="Mansueto Library, Chicago, Illinois" src="work/travel/chicago1.jpg" class="photo">
+            </div>
+        </div>
+
+        <!-- Dallas -->
+        <div class="section">
+            <h2 class="city city-dallas">Dallas, <span class="medium">Texas</span></h2>
+            <div class="scroll">
+                <img alt="Dallas/Fort Worth Airport, Dallas, Texas" src="work/travel/dallas1.jpg" class="photo">
+                <img alt="Ken Good Park, Dallas, Texas" src="work/travel/dallas2.jpg" class="photo">
+                <img alt="McConnell Hall, Denton, Texas" src="work/travel/dallas3.jpg" class="photo">
+            </div>
+        </div>
+
+        <!-- Florence -->
+        <div class="section">
+            <h2 class="city city-florence">Florence, <span class="medium">Italy</span></h2>
+            <div class="scroll">
+                <img alt="Florence Cathedral, Florence, Italy" src="work/travel/florence1.jpg" class="photo">
+            </div>
+        </div>
+
+        <!-- Istanbul -->
+        <div class="section">
+            <h2 class="city city-istanbul">Istanbul, <span class="medium">Turkey</span></h2>
+            <div class="scroll">
+                <img alt="Sultan Ahmet Mosque, Fatih, Turkey" src="work/travel/istanbul1.jpg" class="photo">
+                <img alt="Sultan Ahmet Mosque, Fatih, Turkey" src="work/travel/istanbul2.jpg" class="photo">
+            </div>
+        </div>
+
+        <!-- Ithaca -->
+        <div class="section">
+            <h2 class="city city-ithaca">Ithaca, <span class="medium">New York</span></h2>
+            <div class="scroll">
+                <img alt="Libe Slope, Ithaca, New York" src="work/travel/ithaca1.jpg" class="photo">
+                <img alt="Cornell University, Ithaca, New York" src="work/travel/ithaca2.jpg" class="photo">
+                <img alt="Cornell University, Ithaca, New York" src="work/travel/ithaca3.jpg" class="photo">
+            </div>
+        </div>
+
+        <!-- London -->
+        <div class="section">
+            <h2 class="city city-london">London, <span class="medium">United Kingdom</span></h2>
+            <div class="scroll">
+                <img alt="Westminster Pier, Westminster, United Kingdom" src="work/travel/london1.jpg" class="photo">
+                <img alt="Tower Hamlets, London, United Kingdom" src="work/travel/london2.jpg" class="photo">
+            </div>
+        </div>
+
+        <!-- Madrid -->
+        <div class="section">
+            <h2 class="city city-madrid">Madrid, <span class="medium">Spain</span></h2>
+            <div class="scroll">
+                <img alt="Madrid, Spain" src="work/travel/madrid1.jpg" class="photo">
+            </div>
+        </div>
+
+        <!-- Milan -->
+        <div class="section">
+            <h2 class="city city-milan">Milan, <span class="medium">Italy</span></h2>
+            <div class="scroll">
+                <img alt="Milano Centrale, Milan, Italy" src="work/travel/milan1.jpg" class="photo">
+                <img alt="Milan, Lombardy, Italy" src="work/travel/milan2.jpg" class="photo">
+            </div>
+        </div>
+
+        <!-- New York -->
+        <div class="section">
+            <h2 class="city city-nyc">New York City, <span class="medium">New York</span></h2>
+            <div class="scroll">
+                <img alt="Drunken Dumpling, New York City, New York" src="work/travel/nyc1.jpg" class="photo">
+            </div>
+        </div>
+
+        <!-- Orlando -->
+        <div class="section">
+            <h2 class="city city-orlando">Orlando, <span class="medium">Florida</span></h2>
+            <div class="scroll">
+                <img alt="Cocoa Beach, Orlando, Florida" src="work/travel/orlando1.jpg" class="photo">
+                <img alt="Hogwarts, Orlando, Florida" src="work/travel/orlando2.jpg" class="photo">
+                <img alt="Cocoa Beach, Orlando, Florida" src="work/travel/orlando3.jpg" class="photo">
+            </div>
+        </div>
+
+        <!-- San Francisco -->
+        <div class="section">
+            <h2 class="city city-sf">San Francisco, <span class="medium">California</span></h2>
+            <div class="scroll">
+                <img alt="San Francisco, California" src="work/travel/sf1.jpg" class="photo">
+                <img alt="Japanese Tea Garden, San Francisco, California" src="work/travel/sf2.jpg" class="photo">
+            </div>
+        </div>
+
+        <!-- Sendai -->
+        <div class="section">
+            <h2 class="city city-sendai">Sendai, <span class="medium">Miyagi, Japan</span></h2>
+            <div class="scroll">
+                <img alt="Tsurugajo Park, Aizuwakamatsu-Shi, Japan" src="work/travel/sendai1.jpg" class="photo">
+                <img alt="Aoba-Ku, Sendai-Shi, Miyagi, Japan" src="work/travel/sendai2.jpg" class="photo">
+                <img alt="Tagajo, Miyagi, Japan" src="work/travel/sendai3.jpg" class="photo">
+            </div>
+        </div>
+
+        <!-- Sydney -->
+        <div class="section">
+            <h2 class="city city-sydney">Sydney, <span class="medium">Australia</span></h2>
+            <div class="scroll">
+                <img alt="The Domain, Sydney, Austrailia" src="work/travel/sydney1.jpg" class="photo">
+                <img alt="Chinatown, Haymarket, Austrailia" src="work/travel/sydney2.jpg" class="photo">
+            </div>
+        </div>
+
+        <!-- Venice -->
+        <div class="section">
+            <h2 class="city city-venice">Venice, <span class="medium">Italy</span></h2>
+            <div class="scroll">
+                <img alt="Venice, Veneto, Italy" src="work/travel/venice1.jpg" class="photo">
+                <img alt="Rio Dell'Arbero, Venice, Italy" src="work/travel/venice2.jpg" class="photo">
+            </div>
+        </div>
+
+    </main>
+    
+    <footer class="c12 grid">
+        <div class="c6-left">
+            <p>If you’re looking to work with me or want to grab some coffee, feel free to email me at <a href="mailto:zainkhoja7@gmail.com?subject=Hey!" target="_blank" rel="noopener">zainkhoja7@gmail.com</a>.</p>
+        </div>
+        <div class="social">
+            <a href="https://twitter.com/zainkho" target="_blank" rel="noopener"><img alt="Twitter icon" src="icons/twitter.svg" class="icons"></a>
+            <a href="https://medium.com/@zainkho" target="_blank" rel="noopener"><img alt="Medium icon" src="icons/medium.svg" class="icons"></a>
+            <a href="https://linkedin.com/in/zainkho" target="_blank" rel="noopener"><img alt="LinkedIn icon" src="icons/linkedin.svg" class="icons"></a>
+        </div>  
+        
+        <!-- Scroll To Top -->
+        <a href="#top" aria-label="scroll to top" class="content-web no-display scroll-to-top"></a>
+    </footer>
+</body>
+
+</html>
