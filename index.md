@@ -15,20 +15,25 @@ My research are highly focusing on marco energy transition and modeling, with in
 - **Electric system modeling:** macro grid capacity modeling
 - **Energy Transition:** switch from fossil fuel to renewable energy 
 - **Machine Learning:** fairness AI, penalization and augmentation methods
-- **Spatial Data Analysis:** functional regression, and clustering methods
+- **Data Science:** functional regression, and clustering methods
 
 
-##
 {% include_relative _includes/papers.md %}
 
 
-
+## Previous Experience
+- **[2022-2022]** <a href="https://www.edpr.com/en" target="_blank">EDP Renewables (EDPR)</a>
+- **[2019-2021]** <a href="https://ruralinnovation.us" target="_blank">Center on Rural Innovation (CORI)</a>
+- **[2018-2019]** <a href="https://theicct.org/" target="_blank">International Council on Clean Transportation (ICCT)</a>
 
 
 ## Awards
 - **[Dec. 2022]** <a href="https://kenkennedy.rice.edu/funding/sponsored-fellowships" target="_blank">*Scott Morton Memorial Graduate Fellowship*</a>
 - **[Oct. 2022]** <a href="https://twitter.com/CMAS_Center/status/1582778652256657411?s=20&t=h5vFzhI_B-fkoFcN5-F0ow" target="_blank">*CMAS Conference Student Poster Award*</a>
 - **[Feb. 2022]** *H.W. Reeves Endowed Scholarship*
+- **[May. 2018]** <a href="https://theicct.org/" target="_blank">*ICCT Research Fellowship*</a>
+- **[May. 2016]** <a href="https://www.earth.miami.edu/" target="_blank">*Departmental Honors in Marine and Atmospheric Science Program*</a>
+
 
 {% include_relative _includes/services.md %}
 
