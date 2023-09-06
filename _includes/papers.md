@@ -14,7 +14,7 @@
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
     <div class="title"><a href="https://www.mdpi.com/2073-4433/13/3/385#">Black Carbon Emissions and Associated Health Impacts of Gas Flaring in the United States</a></div>
     <div class="author"><strong>Chen Chen</strong>, David C. McCabe, Lesley E. Fleischman, and Daniel S. Cohan</div>
-    <div class="periodical"><em>MDPI, Feb. 2022.</em></div>
+    <div class="periodical"><em>MDPI Atmosphere, Feb. 2022.</em></div>
     <div class="links">
     <a href="https://www.mdpi.com/2073-4433/13/3/385#" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Website</a>
       <a href="./assets/files/atmosphere-13-00385-v2.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
@@ -35,7 +35,7 @@
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
     <div class="title"><a href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2019GH000183">Ship emission impacts on air quality and human health in the Pearl River Delta (PRD) region, China, in 2015, with projections to 2030</a></div>
     <div class="author"><strong>Chen Chen</strong>, Eri Saikawa, Bryan Comer, Xiaoli Mao, Dan Rutherford</div>
-    <div class="periodical"><em>AGU, Sep. 2019.</em></div>
+    <div class="periodical"><em>AGU GeoHealth, Sep. 2019.</em></div>
     <div class="links">
     <a href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2019GH000183" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Website</a>
       <a href="https://agupubs.onlinelibrary.wiley.com/doi/epdf/10.1029/2019GH000183" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
