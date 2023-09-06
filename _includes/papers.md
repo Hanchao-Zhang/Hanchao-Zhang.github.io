@@ -13,7 +13,7 @@
 
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
     <div class="title"><a href="https://www.mdpi.com/2073-4433/13/3/385#">Black Carbon Emissions and Associated Health Impacts of Gas Flaring in the United States</a></div>
-    <div class="author"><strong>Chen Chen</strong></div>
+    <div class="author"><strong>Chen Chen</strong>, David C. McCabe, Lesley E. Fleischman, and Daniel S. Cohan</div>
     <div class="periodical"><em>MDPI, Feb. 2022.</em></div>
     <div class="links">
     <a href="https://www.mdpi.com/2073-4433/13/3/385#" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Website</a>
@@ -34,7 +34,7 @@
 
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
     <div class="title"><a href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2019GH000183">Ship emission impacts on air quality and human health in the Pearl River Delta (PRD) region, China, in 2015, with projections to 2030</a></div>
-    <div class="author"><strong>Chen Chen</strong></div>
+    <div class="author"><strong>Chen Chen</strong>, Eri Saikawa, Bryan Comer, Xiaoli Mao, Dan Rutherford</div>
     <div class="periodical"><em>AGU, Sep. 2019.</em></div>
     <div class="links">
     <a href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2019GH000183" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Website</a>
@@ -53,7 +53,7 @@
   </div>
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
     <div class="title"><a href="https://doi.org/10.5194/acp-19-8209-2019">Nepal Ambient Monitoring and Source Testing Experiment (NAMaSTE): Emissions of particulate matter and sulfur dioxide from vehicles and brick kilns and their impacts on air quality in the Kathmandu Valley, Nepal</a></div>
-    <div class="author">Min Zhong, Eri Saikawa, Alexander Avramov, <strong>Chen Chen</strong>, Boya Sun, Wenlu Ye, William C. Keene, Robert J. Yokelson, Thilina Jayarathne, Elizabeth A. Stone, Maheswar Rupakheti, and Arnico K. Panday</div>
+    <div class="author">Zhong, M., Saikawa, E., Avramov, A., <strong>Chen, C.</strong>, Sun, B., Ye, W., Keene, W. C., Yokelson, R. J., Jayarathne, T., Stone, E. A., Rupakheti, M., and Panday, A. K.</div>
     <div class="periodical"><em>Atmospheric Chemistry and Physics, Sep. 2019.</em></div>
     <div class="links">
     <a href="https://doi.org/10.5194/acp-19-8209-2019
