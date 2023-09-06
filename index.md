@@ -8,12 +8,12 @@ I'm a <a href="https://profiles.rice.edu/student/chen-chen/" target="_blank"> En
 
 I obtained my M.S. in Environmental Sciences from <a href="https://www.emory.edu" target = "_blank"> Emory University</a>, Atlanta, GA in 2018. I also hold a B.S. with Honor in Marine Science and Chemistry, with a minor in Mathematics and Geology, from <a href="https://www.miami.edu" target = "_blank"> University of Miami</a>, Coral Gables, FL.
 
-My research interests are all environmental-related issues, particularly as they pertain to human health and climate impacts. I am highly skilled in quantitative and geospatial analysis and I believe a thorough quantitative and geospatial analysis is the key to evaluate any environmental policies.
+My research are highly focusing on marco energy transition and modeling, with investigation into four pillars: 1) economic, 2) social-environmental, 3) technological, and 4) policy. My recent papers highlighted the human health impacts from natural gas flaring, the future opportunity of geothermal in energy transition, and energy reliablity analysis in Texas. I am an experienced quantitative and geospatial data scientist and self-taught developer.
 
 
 ## Research Interests
-- **Energy modeling:** macro grid capacity modeling
-- **Energy Transition:** renewable energy
+- **Electric system modeling:** macro grid capacity modeling
+- **Energy Transition:** switch from fossil fuel to renewable energy 
 - **Machine Learning:** fairness AI, penalization and augmentation methods
 - **Spatial Data Analysis:** functional regression, and clustering methods
 
