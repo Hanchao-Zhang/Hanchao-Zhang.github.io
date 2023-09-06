@@ -27,23 +27,25 @@
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/publications.css">
 
+  <!-- Nav -->
+  <div class="hero">
+    <div class="header">
+        <nav class="nav">
+            <h5 class="option selected">About</h5>
+            <h5 class="option"><a href="pub">Publications</a></h5>
+            <h5 class="option"><a href="travel">Travel</a></h5>
+            <h5 class="option"><a href="life">Life</a></h5>
+        </nav>
+    </div>
+  
+            
+  
+
 </head>
 
 <body>
   <div class="wrapper">
     <header>
-        <!-- Nav -->
-        <div class="hero">
-          <div class="header">
-              <nav class="nav">
-                  <h5 class="option selected">About</h5>
-                  <h5 class="option"><a href="pub">Publications</a></h5>
-                  <h5 class="option"><a href="travel">Travel</a></h5>
-                  <h5 class="option"><a href="life">Life</a></h5>
-              </nav>
-          </div>
-
-          
       {% if site.avatar %}
       <a class="image avatar"><img src="{{ site.avatar }}" alt="avatar" /> </a>
       {% endif %}
