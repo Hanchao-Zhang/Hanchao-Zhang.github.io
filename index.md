@@ -25,7 +25,7 @@ Outside of academia, I began my journey as a professional swimmer at the age of 
 
 
 ## Awards
-- **[May. 2023]** <a href="https://gsas.nyu.edu/admissions/financial-aid/graduate-school-fellowships-and-assistantships.html" target="_blank">*MacCracken Awards*</a>
+- **[May. 2023]** <a href="https://gsas.nyu.edu/admissions/financial-aid/graduate-school-fellowships-and-assistantships.html" target="_blank">*MacCracken Awards*</a> for outstanding research and activities
 
 
 <!-- {% include_relative _includes/publications.md %} -->
