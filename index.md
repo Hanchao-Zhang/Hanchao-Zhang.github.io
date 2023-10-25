@@ -53,3 +53,10 @@ Outside of academia, I began my journey as a professional swimmer at the age of 
 {% include_relative _includes/services.md %}
 
 
+## Useful Resources
+
+<!-- https://yuhangzhou88.github.io/ESL_Solution/  -->
+- <a href="https://yuhangzhou88.github.io/ESL_Solution/" target="_blank">*A Solution Manual of The Elements of Statistical Learning*</a> by Yuhang Zhou 
+
+
+
