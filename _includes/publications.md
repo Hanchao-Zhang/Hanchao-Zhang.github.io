@@ -33,7 +33,7 @@
 </div>
 
 <br>
-
+<br>
   
 <li>
 <div class="pub-row">
@@ -65,7 +65,7 @@
 </div>
 
 <br>
-
+<br>
 
 <li>
 <div class="pub-row">
@@ -95,7 +95,7 @@
   
 </div>
 
-
+<br>
 <br>
 
 <li>
@@ -128,7 +128,7 @@
 </div>
 
 <br>
-
+<br>
 
 <li>
 <div class="pub-row">
@@ -160,9 +160,4 @@
     </div>
   </div>
   
-</div>
-
-<br>
-
-</ol>
 </div>
