@@ -142,7 +142,7 @@
 	<a href="https://scholar.google.com/citations?user=F19iFf8AAAAJ&hl=en">Yao Zhang</a>,
 	<strong>Haokun Chen</strong>,
 	<a href="https://www.linkedin.com/in/ahmed-frikha?originalSubdomain=de">Ahmed Frikha</a>,
-	<a href="https://www.linkedin.com/in/yezi-yang-146a62201/?originalSubdomain=de">Yezi Ynag</a>,
+	<a href="https://www.linkedin.com/in/yezi-yang-146a62201/?originalSubdomain=de">Yezi Yang</a>,
 	<a href="https://www.dbs.ifi.lmu.de/~krompass/">Denis Krompass</a>, 
 	<a href="https://www.dbs.ifi.lmu.de/cms/personen/mitarbeiter/zhang/index.html">Gengyuan Zhang</a>,
 	<a href="https://jindonggu.github.io/">Jindong Gu</a>,
