@@ -22,13 +22,13 @@ canonical: https://minimal-light-theme.yliu.me/
 # Links 
 # If you don't need one of them, you may delete the corresponding line.
 google_scholar: https://scholar.google.com/citations?user=ilbqzDwAAAAJ&hl=en
-cv_link: assets/files/HanchaoZhangCV.pdf
+cv_link: assets/files/Haokun_CV.pdf
 github_link: https://github.com/HaokunChen245/
 linkedin: https://www.linkedin.com/in/haokun-chen-c010779
 
 # Images (e.g., your profile picture and your website's favicon) 
 # "favicon" and "favicon_dark" are used for the light and dark modes, respectively. 
-avatar: ./assets/img/avatar.jpg
+avatar: ./assets/img/avatar_chen.jpg
 # logo: ./assets/img/logo.png
 favicon: ./assets/img/favicon.png
 favicon_dark: ./assets/img/favicon-dark.png
