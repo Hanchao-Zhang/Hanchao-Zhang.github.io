@@ -3,8 +3,6 @@
 <div class="publications">
 <ol class="bibliography">
 
-
-
 <li>
 <div class="pub-row">
 
@@ -34,6 +32,7 @@
   </div>
 </div>
 
+<br>
 
   
 <li>
@@ -65,6 +64,7 @@
   
 </div>
 
+<br>
 
 
 <li>
@@ -96,6 +96,7 @@
 </div>
 
 
+<br>
 
 <li>
 <div class="pub-row">
@@ -126,6 +127,7 @@
   
 </div>
 
+<br>
 
 
 <li>
@@ -160,8 +162,6 @@
   
 </div>
 
-</li>
-  
 <br>
 
 </ol>
