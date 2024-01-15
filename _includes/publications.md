@@ -72,7 +72,7 @@
     <abbr class="badge">arXiv</abbr>
   </div>
   
-  <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 30px;">
+  <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
     <div class="title">
       <a href="https://arxiv.org/pdf/2308.08634.pdf">
       FedPop: Federated Population-based Hyperparameter Tuning
