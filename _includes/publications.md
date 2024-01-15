@@ -3,6 +3,8 @@
 <div class="publications">
 <ol class="bibliography">
 
+
+
 <li>
 <div class="pub-row">
 
@@ -31,6 +33,8 @@
     </div>
   </div>
 </div>
+
+
   
 <li>
 <div class="pub-row">
@@ -61,6 +65,8 @@
   
 </div>
 
+
+
 <li>
 <div class="pub-row">
   <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
@@ -88,6 +94,8 @@
   </div>
   
 </div>
+
+
 
 <li>
 <div class="pub-row">
@@ -117,6 +125,8 @@
   </div>
   
 </div>
+
+
 
 <li>
 <div class="pub-row">
