@@ -7,7 +7,7 @@
 <div class="pub-row">
 
   <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;padding-bottom: 50px;">
-    <img src="assets/img/nips2023.png" class="teaser img-fluid z-depth-1">
+    <img src="assets/img/feddat.png" class="teaser img-fluid z-depth-1">
     <abbr class="badge">AAAI</abbr>
   </div>
 
@@ -37,7 +37,7 @@
 <li>
 <div class="pub-row">
   <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;padding-bottom: 30px;">
-    <img src="assets/img/nips2023.png" class="teaser img-fluid z-depth-1">
+    <img src="assets/img/fraug.png" class="teaser img-fluid z-depth-1">
     <abbr class="badge">ICCV</abbr>
   </div>
   
@@ -68,7 +68,7 @@
 <li>
 <div class="pub-row">
   <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;padding-bottom: 25px;">
-    <img src="assets/img/nips2023.png" class="teaser img-fluid z-depth-1">
+    <img src="assets/img/fedpop.png" class="teaser img-fluid z-depth-1">
     <abbr class="badge">arXiv</abbr>
   </div>
   
@@ -98,7 +98,7 @@
 <li>
 <div class="pub-row">
   <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;padding-bottom: 20px;">
-    <img src="assets/img/nips2023.png" class="teaser img-fluid z-depth-1">
+    <img src="assets/img/dfdg.png" class="teaser img-fluid z-depth-1">
     <abbr class="badge">ACML</abbr>
   </div>
   
@@ -129,7 +129,7 @@
 <li>
 <div class="pub-row">
   <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;padding-bottom: 30px;">
-    <img src="assets/img/nips2023.png" class="teaser img-fluid z-depth-1">
+    <img src="assets/img/clvqa.png" class="teaser img-fluid z-depth-1">
     <abbr class="badge">arXiv</abbr>
   </div>
   
