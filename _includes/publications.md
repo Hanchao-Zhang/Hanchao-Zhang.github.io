@@ -13,7 +13,7 @@
 
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
     <div class="title">
-      <a href="https://arxiv.org/pdf/2002.10211.pdf">
+      <a href="https://arxiv.org/pdf/2308.12305.pdf">
       FedDAT: An Approach for Foundation Model Finetuning in Multi-Modal Heterogeneous Federated Learning
     </a></div>
     <div class="author">
@@ -26,7 +26,7 @@
     <div class="periodical"><em>The 38th Annual AAAI Conference on Artificial Intelligence <strong>(AAAI)</strong>, Feb. 2024.</em></div>
     <div class="links">
       <a href="https://github.com/HaokunChen245/FedDAT" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
-      <a href="https://arxiv.org/pdf/2002.10211.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
+      <a href="https://arxiv.org/pdf/2308.12305.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
       <strong><i style="color:#7b5aa6">Poster Presentation</i></strong>
     </div>
   </div>
