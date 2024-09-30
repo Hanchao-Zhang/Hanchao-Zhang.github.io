@@ -60,7 +60,41 @@
       <strong><i style="color:#7b5aa6">Poster Presentation</i></strong>
     </div>
   </div>
-  
+</div>
+
+<br>
+
+<li>
+<div class="pub-row">
+
+  <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;padding-bottom: 50px;">
+    <img src="assets/img/fedbip.png" class="teaser img-fluid z-depth-1">
+    <abbr class="badge">Under review</abbr>
+  </div>
+
+  <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
+    <div class="title">
+      <a href="https://arxiv.org/pdf/2308.12305.pdf">
+      FedBiP: Heterogeneous One-Shot Federated Learning with Personalized Latent Diffusion Models
+    </a></div>
+    <div class="author">
+            <strong>Haokun Chen</strong>,
+    <a href="https://scholar.google.com/citations?user=gZrfKq0AAAAJ&hl=en">Hang Li</a>,        
+		<a href="https://scholar.google.com/citations?user=F19iFf8AAAAJ&hl=en">Yao Zhang</a>,
+    <a href="https://scholar.google.com/citations?user=LN2tYr0AAAAJ&hl=en">Gengyuan Zhang</a>,    
+    <a href="https://scholar.google.com/citations?user=ngCBlN4AAAAJ&hl=en">Jinhe Bi</a>,    
+		<a href="https://www.dbs.ifi.lmu.de/~krompass/">Denis Krompass</a>, 
+    <a href="https://scholar.google.com/citations?user=kPxa2w0AAAAJ&hl=en">Philip Torr</a>,     
+		<a href="https://jindonggu.github.io/">Jindong Gu</a>,
+		<a href="https://www.dbs.ifi.lmu.de/~tresp/">Volker Tresp</a>
+    </div>
+    <div class="periodical"><em>arXiv (arXiv), Sep. 2024.</em></div>
+    <div class="links">
+      <!-- <a href="https://github.com/HaokunChen245/FedDAT" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a> -->
+      <a href="https://arxiv.org/pdf/2308.08634.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
+      <strong><i style="color:#7b5aa6">arXiv.org</i></strong>
+    </div>
+  </div>
 </div>
 
 <br>
