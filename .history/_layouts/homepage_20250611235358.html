@@ -144,7 +144,7 @@
 
     </footer>
   </div>
-  <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+  <script src="{{ " /assets/js/scale.fix.js" | relative_url }}"></script>
   {% if site.google_analytics %}
   <script>
     (function (i, s, o, g, r, a, m) {
@@ -158,29 +158,24 @@
   </script>
   {% endif %}
   <!-- Vanta + Three.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
-<script>
-  VANTA.BIRDS({
-    el: "#vanta-bg",
-    mouseControls: true,
-    touchControls: true,
-    gyroControls: true,
-    minHeight: 200.00,
-    minWidth: 200.00,
-    scale: 1.00,
-    scaleMobile: 1.00,
-    backgroundColor: 0xffffff,     // white background
-    color1: 0x57068C,              // NYU purple for birds
-    color2: 0x999999,              // light gray for accent birds
-    birdSize: 1.5,
-    wingSpan: 20,
-    speedLimit: 3.00,
-    separation: 50.00,
-    alignment: 50.00,
-    cohesion: 50.00,
-    quantity: 2
-  })
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.clouds2.min.js"></script>
+  <script>
+    VANTA.CLOUDS2({
+      el: "#vanta-bg",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      backgroundColor: 0x000000,
+      skyColor: 0x5ca6ca,
+      cloudColor: 0x334d80,
+      lightColor: 0xffffff,
+      speed: 1.00,
+      texturePath: "./gallery/noise.png"
+    })
   </script>
 
 

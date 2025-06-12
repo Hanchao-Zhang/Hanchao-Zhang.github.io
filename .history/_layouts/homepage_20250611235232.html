@@ -27,6 +27,11 @@
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/publications.css">
 
+  <style>
+    #vanta-bg canvas {
+      pointer-events: none !important;
+    }
+  </style>
 </head>
 
 <!--  -->
@@ -144,7 +149,7 @@
 
     </footer>
   </div>
-  <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+  <script src="{{ " /assets/js/scale.fix.js" | relative_url }}"></script>
   {% if site.google_analytics %}
   <script>
     (function (i, s, o, g, r, a, m) {

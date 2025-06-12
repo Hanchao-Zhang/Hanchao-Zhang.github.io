@@ -36,7 +36,15 @@
 <!--  -->
 <body>
   <!-- 🌌 Vanta background lives behind everything -->
-  <div id="vanta-bg" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;"></div>
+  <!-- Vanta Background Container -->
+<div id="vanta-bg" style="
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: -1;
+"></div>
 
   <!-- 💻 Your content is wrapped here -->
   <div class="wrapper" style="position: relative; z-index: 1;">
@@ -144,7 +152,7 @@
 
     </footer>
   </div>
-  <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+  <script src="{{ " /assets/js/scale.fix.js" | relative_url }}"></script>
   {% if site.google_analytics %}
   <script>
     (function (i, s, o, g, r, a, m) {

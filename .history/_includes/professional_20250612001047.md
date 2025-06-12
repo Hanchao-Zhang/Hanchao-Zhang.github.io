@@ -1,0 +1,28 @@
+<!-- Timeline section for professional experiences -->
+<div class="timeline-container">
+  <h2>Professional Experiences</h2>
+  <div class="timeline-line"></div>
+
+  <!-- Current role at Google -->
+  <div class="timeline-entry">
+    <div class="year-circle">2025</div>
+    <div class="entry-content">
+      <h3><i class="fas fa-briefcase"></i> Research Data Scientist, Google</h3>
+      <ul>
+        <li>Apply statistical methods to analyze complex strategic questions</li>
+        <li>Optimize decision-making processes across company initiatives</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Ph.D. research experience -->
+  <div class="timeline-entry">
+    <div class="year-circle">2024</div>
+    <div class="entry-content">
+      <h3><i class="fas fa-graduation-cap"></i> Ph.D. Research, NYU</h3>
+      <ul>
+        <li>Supervised by Prof. Thaddeus Tarpey</li>
+      </ul>
+    </div>
+  </div>
+</div>
