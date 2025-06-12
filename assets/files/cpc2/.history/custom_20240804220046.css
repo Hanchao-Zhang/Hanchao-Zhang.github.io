@@ -1,0 +1,205 @@
+/* custom.css */
+
+/* General Styles */
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Title */
+h1.title {
+    font-size: 3em;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    /* Title text to white */
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px #470063;
+    /* Optional: subtle shadow */
+    background-color: #57068c;
+    /* NYU Purple background */
+    padding: 20px;
+    border-radius: 30px;
+    /* Smoother corners */
+}
+
+/* Author and Date */
+.author,
+.date {
+    font-size: 1.2em;
+    color: white;
+    /* Author and Date text to white */
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #57068c;
+    /* NYU Purple background */
+    padding: 10px;
+    border-radius: 20px;
+    /* Smoother corners */
+}
+
+/* Headings */
+h1,
+h2 {
+    color: rgb(255, 255, 255);
+    /* Headers text to white */
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: ;
+    /* NYU Purple background */
+    border-radius: 20px;
+    /* Smoother corners */
+}
+
+/* Specific Styles for Each Heading Level */
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2.2em;
+    border-bottom: 2px solid white;
+    /* Border to white */
+    padding-bottom: 10px;
+}
+
+/* For other headings (h3 to h6), use default color */
+h3,
+h4,
+h5,
+h6 {
+    color: #57068c;
+    /* NYU Purple */
+}
+
+h3 {
+    font-size: 1.8em;
+    border-bottom: 1px solid #57068c;
+    /* Border to purple */
+    padding-bottom: 5px;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+h5 {
+    font-size: 1.2em;
+}
+
+h6 {
+    font-size: 1em;
+}
+
+/* Paragraphs */
+p {
+    margin: 10px 0;
+    color: #444;
+    line-height: 1.8;
+}
+
+/* Links */
+a {
+    color: #57068c;
+    /* NYU Purple */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #470063;
+}
+
+/* Code blocks */
+pre,
+code {
+    font-family: 'Courier New', monospace;
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 10px;
+    /* Smoother corners */
+}
+
+pre {
+    padding: 15px;
+    overflow: auto;
+}
+
+/* Lists */
+ul,
+ol {
+    margin: 10px 0 10px 20px;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+}
+
+/* Blockquotes */
+blockquote {
+    border-left: 5px solid #57068c;
+    /* NYU Purple */
+    margin: 10px 0;
+    padding: 10px 20px;
+    background: #eaf2f8;
+    font-style: italic;
+    color: #555;
+    border-radius: 10px;
+    /* Smoother corners */
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: white;
+}
+
+th,
+td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background: #57068c;
+    /* NYU Purple */
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    /* Smoother corners */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 40px;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+    border-radius: 10px;
+    /* Smoother corners */
+}

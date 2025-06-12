@@ -1,0 +1,132 @@
+/* custom.css */
+
+/* Title */
+h1.title {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Author and Date */
+.author,
+.date {
+    font-size: 1.2em;
+    color: #666;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #2c3e50;
+    font-family: 'Arial', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+/* Paragraphs */
+p {
+    line-height: 1.6;
+    margin: 10px 0;
+    color: #333;
+    font-family: 'Georgia', serif;
+}
+
+/* Links */
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Code blocks */
+pre,
+code {
+    font-family: 'Courier New', monospace;
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+pre {
+    padding: 10px;
+    overflow: auto;
+}
+
+/* Lists */
+ul,
+ol {
+    margin: 10px 0 10px 20px;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+}
+
+/* Blockquotes */
+blockquote {
+    border-left: 5px solid #ccc;
+    margin: 10px 0;
+    padding: 10px 20px;
+    background: #f9f9f9;
+    font-style: italic;
+    color: #555;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background: #f4f4f4;
+    font-weight: bold;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 40px;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+}

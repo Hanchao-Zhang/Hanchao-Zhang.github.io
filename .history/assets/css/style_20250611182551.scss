@@ -1,0 +1,22 @@
+---
+---
+
+@import "minimal-light";
+
+.year-circle {
+  position: absolute;
+  left: -12px;
+  top: -3px;
+  width: 30px;
+  height: 30px;
+  background-color: #57068C;
+  color: white;
+  font-weight: bold;
+  font-size: 0.7rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+

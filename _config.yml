@@ -1,0 +1,59 @@
+url: "hanchaozhang.xyz "
+# baseurl: Hanchao-Zhang.github.io
+# Basic Information
+title: Hanchao Zhang
+# subtitle:
+position: Research Scientist
+# subposition: Chair of the Chinese Student and Scholar Association (CSSA)
+subposition_link: https://nyu-medicine-cssa.github.io
+affiliation: Google LLC
+# subaffiliation: Grossman School of Medicine
+affiliation_link: https://about.google/
+subaffiliation_link: https://med.nyu.edu/research/vilcek-institute-graduate-biomedical-sciences/
+email: Hanchao.Zhang@nyu.edu
+address: 100 Bayview Dr, Mountain View, CA 94043
+address_link: https://goo.gl/maps/aQZfmiKjQmqbDsVY9
+
+# Search Engine Optimization (SEO)
+# The following information is used to improve the website traffic from search engines, e.g., Google.
+keywords: minimal light
+description: The Minimal Light is a simple and elegant jekyll theme for academic personal homepage.
+canonical: https://minimal-light-theme.yliu.me/
+
+# Links
+# If you don't need one of them, you may delete the corresponding line.
+google_scholar: https://scholar.google.com/citations?user=bePCCD8AAAAJ&hl=en
+# cv_link: assets/files/HanchaoZhangCV.pdf
+github_link: https://github.com/Hanchao-Zhang
+linkedin: https://www.linkedin.com/in/hanchao-ted-zhang-670105b7/?locale=en_US
+twitter: https://twitter.com/tedddddy_zhang
+
+# Images (e.g., your profile picture and your website's favicon)
+# "favicon" and "favicon_dark" are used for the light and dark modes, respectively.
+avatar: ./assets/img/avatar2.png
+# logo: ./assets/img/logo.png
+favicon: ./assets/img/favicon.png
+favicon_dark: ./assets/img/favicon-dark.png
+
+# Footnote
+# You may use the option to disable the footnote, "Powered by Jekyll and Minimal Light theme."
+enable_footnote: false
+
+# Google Analytics ID
+# Please remove this if you don't use Google Analytics
+google_analytics: UA-111540567-4
+
+# Use this project as a remote theme for GitHub Pages
+# See the guide here: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll
+remote_theme: yaoyao-liu/minimal-light
+
+# The following files will be removed from the generated website.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - README_zh_Hans.md
+  - README_zh_Hant.md
+  - README_de.md
+  - LICENSE
+  - minimal-light.gemspec

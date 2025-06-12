@@ -1,0 +1,704 @@
+---
+title: "K-Tensors -- Clustering Positive Semi-Definite Matrices"
+author: 
+    - "Hanchao Zhang"
+    - "Thaddues Tarpey"
+format: 
+  revealjs:
+    slide-number: c/t
+    width: 1600
+    height: 900
+    logo: "icon3.png"
+    # footer: "[Division of Biostatistics, Hanchao Zhang](https://rstudio-conf-2022.github.io/get-started-quarto/)"
+    transition: fade
+    transition-speed: fast
+    center: true
+    mathjax: true
+    theme: default
+    # include-in-header: 
+---
+
+
+## Functional Connectivity **Matrix**
+
+::::{.columns}
+
+:::{.column width="50%"}
+![](./pics/fMRI.png){#fig:fMRI width=90%}
+
+<small>Functional Connectivity. [Gillebert et al., 2013]</small>
+
+:::
+
+:::{.column width="50%"}
+
+Functional connectivity is defined as the temporal coincidence of spatially distant neurophysiological events.
+
+
+For each participant $i$, let $\mathbf{y}_{ij} \in \mathbb{R}^{\mathcal T}$ be the longitudinal measurement of blood oxygen level-dependent (BOLD) signal on the region of interest $j$, $j = 1,2,\ldots,p$.
+
+The functional connectivity matrix for participant $i$ is the covariance matrix of $\mathbf y_{i}$:
+
+$\mathbf{\Sigma}_i = \textbf{Cov}(\mathbf{y}_i) \succeq  \mathbf{0}$
+:::
+
+::::
+
+
+## K-Means Algorithm
+<!-- :::{.incremental}
+- 1st item
+- 2nd item
+::: -->
+
+::::{.columns}
+:::{.column width=50%}
+\begin{align*}
+        	& \underset{\mathcal  C}{\text{minimize }}   \underbrace{\frac{1}{n}\sum_{j=1}^m \sum_{k \in \mathcal  C_j} \big\Vert x_k - \bar x_{\mathcal  C_j}\big\Vert^2}_{\text{within cluster sum of squares}} \\ &\textbf{ OR } \\
+        	&\underset{\mathcal  C}{\text{maximize}}    \underbrace{\sum_{i=m} \frac{n_{\mathcal  C_j}}{n}\cdot\big\Vert\bar x_{\mathcal  C_j}\big\Vert^2  }_{\text{between cluster sum of squares}}
+    \end{align*}
+Minimize the Euclidean distance between the data points to its closet centroid
+  
+:::
+:::{.column width=50%}
+
+```{python}
+from sklearn.cluster import KMeans
+import numpy as np
+import matplotlib.pyplot as plt
+# set a random seed
+np.random.seed(125)
+
+
+# simiar setting but give a 3d example
+mu = np.array([[0, 0, 0], [2, 3, 3], [0, 1, 3]])
+sigma1 = np.array([[3, 0, 0], [0, 1, 0], [0, 0, 1]])
+sigma2 = np.array([[1, 0, 0], [0, 3, 0], [0, 0, 1]])
+sigma3 = np.array([[1, 0.5, 0], [0, 1, 0], [0, 0.5, 1]])
+X1 = np.random.multivariate_normal(mu[0], sigma1, 1000)
+X2 = np.random.multivariate_normal(mu[1], sigma2, 1000)
+X3 = np.random.multivariate_normal(mu[2], sigma3, 1000)
+X = np.concatenate((X1, X2, X3), axis=0)
+y = np.concatenate((np.zeros(1000), np.ones(1000), 2*np.ones(1000)))
+
+# from mpl_toolkits.mplot3d import Axes3D
+# fig = plt.figure()
+# ax = fig.add_subplot(111, projection='3d')
+# ax.scatter(X[:, 0], X[:, 1], X[:, 2], c=y, s=10, cmap='viridis')
+# plt.show()
+
+# use plotly to plot the 3d data
+import plotly.express as px
+fig = px.scatter_3d(x=X[:, 0], y=X[:, 1], z=X[:, 2], color=y, color_continuous_scale='viridis')
+# smaller the point size
+fig.update_traces(marker=dict(size=2),showlegend=False)
+# remove the color 
+fig.update_layout(showlegend=False)
+# change the background color to transparent
+# fig.update_layout(plot_bgcolor='rgba(1,0,0,0)')
+fig.update_layout(coloraxis_showscale=False)
+# size of the figure
+fig.update_layout(width=800, height=650)
+
+fig.show()
+
+#
+
+
+
+```
+
+
+:::
+::::
+
+
+
+## K-Means Algorithm
+<!-- :::{.incremental}
+- 1st item
+- 2nd item
+::: -->
+
+::::{.columns}
+:::{.column width=50%}
+\begin{align*}
+        	& \underset{\mathcal  C}{\text{minimize }}   \underbrace{\frac{1}{n}\sum_{j=1}^m \sum_{k \in \mathcal  C_j} \big\Vert x_k - \bar x_{\mathcal  C_j}\big\Vert^2}_{\text{within cluster sum of squares}} \\ &\textbf{ OR } \\
+        	&\underset{\mathcal  C}{\text{maximize}}    \underbrace{\sum_{i=m} \frac{n_{\mathcal  C_j}}{n}\cdot\big\Vert\bar x_{\mathcal  C_j}\big\Vert^2  }_{\text{between cluster sum of squares}}
+\end{align*}
+Minimize the Euclidean distance between the data points to its closet centroid
+  
+:::
+:::{.column width=50%}
+
+```{python}
+
+# kmeans
+kmeans = KMeans(n_clusters=3, random_state=0).fit(X)
+# plot the data using plotly
+fig = px.scatter_3d(x=X[:, 0], y=X[:, 1], z=X[:, 2],
+                    color=kmeans.labels_, color_continuous_scale='viridis')
+# smaller the point size
+fig.update_traces(marker=dict(size=2), showlegend=False)
+# remove the color
+
+# plot the centroids
+fig.add_scatter3d(x=kmeans.cluster_centers_[:, 0], y=kmeans.cluster_centers_[
+    :, 1], z=kmeans.cluster_centers_[:, 2], mode='markers', marker=dict(size=10, color='red'))
+# change the background color to transparent
+# fig.update_layout(plot_bgcolor='rgba(1,0,0,0)')
+
+# remove legend
+fig.update_layout(showlegend=False)
+# remove color_continuous_scale legend
+fig.update_layout(coloraxis_showscale=False)
+fig.update_layout(width=800, height=650)
+
+fig.show()
+
+```
+
+
+
+
+:::
+::::
+
+
+## Clustering Centers 
+
+
+::::{.columns}
+:::{.column width=50%}
+\begin{align*}
+    \mathbf u_j & = \mathcal E[\mathbf X \vert \mathbf X \in \mathcal C_j] \\
+    & = \frac{1}{n_j}\sum_{i=1}^{n_j} \mathbf x_i \cdot \delta(\mathbf x_i \in \mathcal C_j),
+\end{align*}
+where the centers of cluster $\mathcal C_j$ is the average of the data points that is classified to the group $\mathcal C_j$.
+
+  
+:::
+:::{.column width=50%}
+
+```{python}
+
+# kmeans
+kmeans = KMeans(n_clusters=3, random_state=0).fit(X)
+# plot the data using plotly
+fig = px.scatter_3d(x=X[:, 0], y=X[:, 1], z=X[:, 2],
+                    color=kmeans.labels_, color_continuous_scale='viridis')
+# smaller the point size
+fig.update_traces(marker=dict(size=2), showlegend=False)
+# remove the color
+
+# plot the centroids
+fig.add_scatter3d(x=kmeans.cluster_centers_[:, 0], y=kmeans.cluster_centers_[
+    :, 1], z=kmeans.cluster_centers_[:, 2], mode='markers', marker=dict(size=10, color='red'))
+# change the background color to transparent
+# fig.update_layout(plot_bgcolor='rgba(1,0,0,0)')
+
+# remove legend
+fig.update_layout(showlegend=False)
+# remove color_continuous_scale legend
+fig.update_layout(coloraxis_showscale=False)
+fig.update_layout(width=800, height=650)
+
+fig.show()
+
+```
+
+:::
+::::
+
+
+## Positive Semi-Definite Matrices
+
+<!-- A matrix $\mathbf \psi \in \mathbb R^{p \times p}$ is positive semi-definite if for any vector $\mathbf x \in \mathbb R^p$, $\mathbf x^T \mathbf \psi \mathbf x \geq 0$. -->
+
+
+<!-- example of psd matrix -->
+
+#### Examples of Positive Semi-Definite Matrices
+::::{.columns}
+:::{.column width=50%}
+- $\mathbf \psi_{2\times 2} = \begin{bmatrix} 1 & 0.5 \\ 0.5 & 1 \end{bmatrix}$
+<!-- high dimensional -->
+- $\mathbf \psi_{3\times 3} = \begin{bmatrix} 1 & 0.5 & 0.3 \\ 0.5 & 1 & 0.2 \\ 0.3 & 0.2 & 1 \end{bmatrix}$
+- $\mathbf \psi_{p\times p} = \begin{bmatrix} x_{11} &  x_{12} & \cdots & x_{1p} \\ x_{21} & x_{22} & \cdots & x_{2p} \\ \vdots & \vdots & \ddots & \vdots \\ x_{p1} & x_{p2} & \cdots & x_{pp} \end{bmatrix}$
+:::
+
+
+:::{.column width=50%}
+
+#### Visualization
+A ellipsoid centered at origin is defined by the set of points $\mathbf x \in \mathbb R^p$ such that $\mathbf x^T \mathbf \psi \mathbf x = 1$.
+
+```{python}
+import numpy as np
+import plotly.graph_objects as go
+
+# Define the covariance matrix
+cov_matrix = np.array([[1, 0.5], [0.5, 1]])
+
+# Compute eigenvalues and eigenvectors of the covariance matrix
+eigenvalues, eigenvectors = np.linalg.eig(cov_matrix)
+
+# Generate points for the ellipse in standard position
+theta = np.linspace(0, 2 * np.pi, 100)
+ellipse_x = np.sqrt(eigenvalues[0]) * np.cos(theta)
+ellipse_y = np.sqrt(eigenvalues[1]) * np.sin(theta)
+ellipse_points = np.array([ellipse_x, ellipse_y])
+
+# Rotate the points to align the ellipse with its principal axes
+rotated_ellipse_points = eigenvectors @ ellipse_points
+
+# Plotting
+fig = go.Figure()
+fig.add_trace(go.Scatter(
+    x=rotated_ellipse_points[0], y=rotated_ellipse_points[1], mode='lines', name='Ellipse'))
+fig.update_layout(xaxis_title='X',
+                  yaxis_title='Y', xaxis=dict(scaleanchor='y', scaleratio=1), yaxis=dict(autorange=True))
+
+fig.show()
+
+
+
+```
+
+
+:::
+::::
+
+
+
+
+
+## Positive Semi-Definite Matrices Visualization
+
+::::{.columns}
+:::{.column width=50%}
+
+<!-- appears one by one -->
+<!-- :::{.incremental} -->
+
+
+
+```{python}
+import numpy as np
+import plotly.graph_objects as go
+
+# Function to generate a rotation matrix from Euler angles
+
+
+def rotation_matrix(alpha, beta, gamma):
+    # Rotation matrix around X-axis
+    R_x = np.array([[1, 0, 0],
+                    [0, np.cos(alpha), -np.sin(alpha)],
+                    [0, np.sin(alpha), np.cos(alpha)]])
+
+    # Rotation matrix around Y-axis
+    R_y = np.array([[np.cos(beta), 0, np.sin(beta)],
+                    [0, 1, 0],
+                    [-np.sin(beta), 0, np.cos(beta)]])
+
+    # Rotation matrix around Z-axis
+    R_z = np.array([[np.cos(gamma), -np.sin(gamma), 0],
+                    [np.sin(gamma), np.cos(gamma), 0],
+                    [0, 0, 1]])
+
+    # Combined rotation matrix
+    R = np.dot(R_z, np.dot(R_y, R_x))
+    return R
+
+# Function to generate ellipse coordinates with 3D rotation
+
+
+def generate_ellipse(center=(0, 0, 0), radii=(1, 2), rotation_angles=(0, 0, 0), num_points=100):
+    angles = np.linspace(0, 2 * np.pi, num_points)
+    x_prime = radii[0] * np.cos(angles)
+    y_prime = radii[1] * np.sin(angles)
+    z_prime = np.zeros_like(x_prime)
+
+    # Create points in 'local' space
+    points = np.array([x_prime, y_prime, z_prime])
+
+    # Apply rotation
+    R = rotation_matrix(*rotation_angles)
+    rotated_points = np.dot(R, points)
+
+    # Translate points
+    x = rotated_points[0, :] + center[0]
+    y = rotated_points[1, :] + center[1]
+    z = rotated_points[2, :] + center[2]
+
+    return x, y, z
+
+
+n = 50  # Number of ellipses
+mean_radii = [4, 3]  # Mean of the radii for the bivariate normal distribution
+mean_radii2 = [4, 2]  # Mean of the radii for the bivariate normal
+mean_radii3 = [5, 1]  # Mean of the radii for the bivariate normal
+
+cov_radii = np.array([[1, 0.5], [0.5, 1]]) * \
+    0.1  # Covariance matrix for the radii
+
+cov_radii2 = np.array([[1, 0.5], [0.5, 1]]) * \
+    0.1  # Covariance matrix for the radii
+
+cov_radii3 = np.array([[1, 0.5], [0.5, 1]]) * \
+    0.1  # Covariance matrix for the radii
+
+mean_rotation = np.pi / 4  # Mean rotation angle
+std_rotation = np.pi / 12  # Standard deviation of the rotation angle
+
+mean_rotation2 = np.pi / 12  # Mean rotation angle
+std_rotation2 = np.pi / 12  # Standard deviation of the rotation angle
+
+mean_rotation3 = np.pi / 2.2  # Mean rotation angle
+std_rotation3 = np.pi / 12  # Standard deviation of the rotation angle
+
+
+# Generate radii using bivariate normal distribution
+radii = np.random.multivariate_normal(mean_radii, cov_radii, n)
+radii2 = np.random.multivariate_normal(mean_radii2, cov_radii2, n)
+radii3 = np.random.multivariate_normal(mean_radii3, cov_radii3, n)
+
+# Generate rotation angles using normal distribution
+rotations = np.random.normal(mean_rotation, std_rotation, (n, 3))
+rotations2 = np.random.normal(mean_rotation2, std_rotation2, (n, 3))
+rotations3 = np.random.normal(mean_rotation3, std_rotation3, (n, 3))
+
+
+# Plotting
+fig = go.Figure()
+
+# Generate and plot ellipses
+for i in range(n):
+    # Generate ellipse
+    x, y, z = generate_ellipse(
+        center=(0, 0, 0), radii=radii[i], rotation_angles=rotations[i])
+
+    # Add ellipse to plot
+    fig.add_trace(go.Scatter3d(x=x, y=y, z=z, mode='lines',
+                  line=dict(color='blue'), name=f'Ellipse {i+1}'))
+
+    # add another ellipse
+    x, y, z = generate_ellipse(
+        center=(0, 0, 0), radii=radii2[i], rotation_angles=rotations2[i])
+
+    # Add ellipse to plot
+    fig.add_trace(go.Scatter3d(x=x, y=y, z=z, mode='lines',
+                  line=dict(color='red'), name=f'Ellipse {i+1}'))
+
+    # add another ellipse
+    x, y, z = generate_ellipse(
+        center=(0, 0, 0), radii=radii3[i], rotation_angles=rotations3[i])
+
+    # Add ellipse to plot
+    fig.add_trace(go.Scatter3d(x=x, y=y, z=z, mode='lines',
+                  line=dict(color='green'), name=f'Ellipse {i+1}'))
+
+
+# Update layout
+fig.update_layout(
+    scene=dict(xaxis_title='X Axis',
+               yaxis_title='Y Axis', zaxis_title='Z Axis'),
+    margin=dict(l=0, r=0, b=0, t=30))
+
+fig.update_layout(showlegend=False)
+# remove color_continuous_scale legend
+fig.update_layout(coloraxis_showscale=False)
+fig.update_layout(width=800, height=650)
+
+
+fig.show()
+
+```
+
+
+:::
+:::{.column width=50%}
+:::{.fragment}
+
+```{python}
+import numpy as np
+import plotly.graph_objects as go
+
+# Function to generate a rotation matrix from Euler angles
+
+
+def rotation_matrix(alpha, beta, gamma):
+    # Rotation matrix around X-axis
+    R_x = np.array([[1, 0, 0],
+                    [0, np.cos(alpha), -np.sin(alpha)],
+                    [0, np.sin(alpha), np.cos(alpha)]])
+
+    # Rotation matrix around Y-axis
+    R_y = np.array([[np.cos(beta), 0, np.sin(beta)],
+                    [0, 1, 0],
+                    [-np.sin(beta), 0, np.cos(beta)]])
+
+    # Rotation matrix around Z-axis
+    R_z = np.array([[np.cos(gamma), -np.sin(gamma), 0],
+                    [np.sin(gamma), np.cos(gamma), 0],
+                    [0, 0, 1]])
+
+    # Combined rotation matrix
+    R = np.dot(R_z, np.dot(R_y, R_x))
+    return R
+
+# Function to generate ellipse coordinates with 3D rotation
+
+
+def generate_ellipse(center=(0, 0, 0), radii=(1, 2), rotation_angles=(0, 0, 0), num_points=100):
+    angles = np.linspace(0, 2 * np.pi, num_points)
+    x_prime = radii[0] * np.cos(angles)
+    y_prime = radii[1] * np.sin(angles)
+    z_prime = np.zeros_like(x_prime)
+
+    # Create points in 'local' space
+    points = np.array([x_prime, y_prime, z_prime])
+
+    # Apply rotation
+    R = rotation_matrix(*rotation_angles)
+    rotated_points = np.dot(R, points)
+
+    # Translate points
+    x = rotated_points[0, :] + center[0]
+    y = rotated_points[1, :] + center[1]
+    z = rotated_points[2, :] + center[2]
+
+    return x, y, z
+
+
+def add_hyperplane(fig, rotation_angles, color, name):
+    # Hyperplane parameters
+    plane_center = np.array([0, 0, 0])  # Center of the hyperplane
+    # Initial normal vector (before rotation)
+    normal_vector = np.array([0, 0, 1])
+
+    # Generate a grid for the hyperplane
+    grid_size = 30
+    x_range = np.linspace(-5, 5, grid_size)
+    y_range = np.linspace(-5, 5, grid_size)
+    xx, yy = np.meshgrid(x_range, y_range)
+    zz = np.zeros_like(xx)
+
+    # Flatten the grid arrays
+    xx_flat = xx.flatten()
+    yy_flat = yy.flatten()
+    zz_flat = zz.flatten()
+
+    # Combine the flattened grid coordinates
+    plane_points = np.vstack((xx_flat, yy_flat, zz_flat))
+
+    # Rotate the plane points
+    R = rotation_matrix(*rotation_angles)
+    rotated_plane_points = R @ plane_points
+
+    # Shift the plane to the center
+    rotated_plane_points += plane_center.reshape(3, 1)
+
+    # Extract the rotated and shifted plane points
+    x_rotated, y_rotated, z_rotated = rotated_plane_points
+
+    # Add the hyperplane to the plot
+    fig.add_trace(go.Mesh3d(x=x_rotated, y=y_rotated,
+                  z=z_rotated, color=color, opacity=0.3, name=name))
+
+
+# n = 100  # Number of ellipses
+# mean_radii = [3, 2]  # Mean of the radii for the bivariate normal distribution
+# mean_radii2 = [4, 2]  # Mean of the radii for the bivariate normal
+# mean_radii3 = [5, 1]  # Mean of the radii for the bivariate normal
+
+# cov_radii = np.array([[1, 0.5], [0.5, 1]]) * \
+#     0.1  # Covariance matrix for the radii
+
+# cov_radii2 = np.array([[1, 0.5], [0.5, 1]]) * \
+#     0.1  # Covariance matrix for the radii
+
+# cov_radii3 = np.array([[1, 0.5], [0.5, 1]]) * \
+#     0.1  # Covariance matrix for the radii
+
+# mean_rotation = np.pi / 4  # Mean rotation angle
+# std_rotation = np.pi / 12  # Standard deviation of the rotation angle
+
+# mean_rotation2 = np.pi / 12  # Mean rotation angle
+# std_rotation2 = np.pi / 12  # Standard deviation of the rotation angle
+
+# mean_rotation3 = np.pi / 2  # Mean rotation angle
+# std_rotation3 = np.pi / 16  # Standard deviation of the rotation angle
+
+
+# # Generate radii using bivariate normal distribution
+# radii = np.random.multivariate_normal(mean_radii, cov_radii, n)
+# radii2 = np.random.multivariate_normal(mean_radii2, cov_radii2, n)
+# radii3 = np.random.multivariate_normal(mean_radii3, cov_radii3, n)
+
+# # Generate rotation angles using normal distribution
+# rotations = np.random.normal(mean_rotation, std_rotation, (n, 3))
+# rotations2 = np.random.normal(mean_rotation2, std_rotation2, (n, 3))
+# rotations3 = np.random.normal(mean_rotation3, std_rotation3, (n, 3))
+
+
+# Plotting
+fig = go.Figure()
+
+# Generate and plot ellipses
+for i in range(n):
+    # Generate ellipse
+    x, y, z = generate_ellipse(
+        center=(0, 0, 0), radii=radii[i], rotation_angles=rotations[i])
+
+    # Add ellipse to plot
+    fig.add_trace(go.Scatter3d(x=x, y=y, z=z, mode='lines',
+                  line=dict(color='blue'), name=f'Ellipse {i+1}'))
+
+    # add another ellipse
+    x, y, z = generate_ellipse(
+        center=(0, 0, 0), radii=radii2[i], rotation_angles=rotations2[i])
+
+    # Add ellipse to plot
+    fig.add_trace(go.Scatter3d(x=x, y=y, z=z, mode='lines',
+                  line=dict(color='red'), name=f'Ellipse {i+1}'))
+
+    # add another ellipse
+    x, y, z = generate_ellipse(
+        center=(0, 0, 0), radii=radii3[i], rotation_angles=rotations3[i])
+
+    # Add ellipse to plot
+    fig.add_trace(go.Scatter3d(x=x, y=y, z=z, mode='lines',
+                  line=dict(color='green'), name=f'Ellipse {i+1}'))
+
+
+# Update layout
+fig.update_layout(
+    scene=dict(xaxis_title='X Axis',
+               yaxis_title='Y Axis', zaxis_title='Z Axis'),
+    margin=dict(l=0, r=0, b=0, t=30))
+
+fig.update_layout(showlegend=False)
+# remove color_continuous_scale legend
+fig.update_layout(coloraxis_showscale=False)
+fig.update_layout(width=800, height=650)
+
+add_hyperplane(fig, [mean_rotation]*3, 'blue', 'Hyperplane 1')
+add_hyperplane(fig, [mean_rotation2]*3, 'red', 'Hyperplane 2')
+add_hyperplane(fig, [mean_rotation3]*3, 'green', 'Hyperplane 3')
+
+fig.show()
+
+```
+
+:::
+:::
+::::
+
+## Formulation of K-Tensors
+
+<!-- #### Some technical details -->
+
+:::{.incremental}
+- let $\mathbf \Psi$ be a random positive semi-definite matrix, and $\mathbf \psi$ be an observed PSD matrix
+- let $\mathcal V_q(\mathbb R^p)$ be the Stiefel manifold, the set of $p \times q$ matrices with orthonormal columns
+- hyperplane can be define by $\mathbf B \in \mathcal V_q(\mathbb R^p)$
+:::
+
+:::{.fragment}
+**Definition 1:** pseudo-eigenvalues of $\mathbf \psi$ with respect to $\mathbf B$ is defined as
+$$
+\Lambda(\mathbf \psi, \mathbf B) := \arg\min_{\mathbf \Theta} \Vert \mathbf \psi - \mathbf B \mathbf \Theta \mathbf B^T \Vert_F^2
+$$
+:::
+
+:::{.fragment}
+
+**Definition 2:** projection of $\mathbf \psi$ onto $\mathbf B\in \mathcal V_q(\mathbb R^p)$ is defined as
+\begin{align*}
+	\mathcal P_{\mathbf B}(\mathbf \psi) = \mathbf B  \mathbf\Lambda_{\mathbf B}(\mathbf \psi)   \mathbf B^\intercal
+\end{align*}
+
+
+:::{.fragment}
+**Definition 3:** the hyperplane (center) that best approximates $\mathbf \psi$ is defined as
+\begin{align}\label{sec3:cpcestimation}
+	& \mathbf B(\mathbf \Psi) = \underset{{\mathbf B \in \mathcal V_p(\mathbb R^p)}}{\arg\min} \ \mathcal E \left\{ \left\Vert \mathbf \Psi - \mathcal P_{\mathbf B}\left( \mathbf \Psi \right) \right\Vert_{F}^2 \right\} 
+\end{align}
+:::
+
+:::
+
+
+## K-Tensors Parametrized by $\mathbf B$
+
+
+```{python}
+
+
+# Plotting
+fig = go.Figure()
+
+# Generate and plot ellipses
+for i in range(n):
+    # Generate ellipse
+    x, y, z = generate_ellipse(
+        center=(0, 0, 0), radii=radii[i], rotation_angles=rotations[i]
+    )
+
+    # Add ellipse to plot
+    fig.add_trace(
+        go.Scatter3d(
+            x=x, y=y, z=z, mode="lines", line=dict(color="blue"), name=f"Ellipse {i+1}"
+        )
+    )
+
+    # add another ellipse
+    x, y, z = generate_ellipse(
+        center=(0, 0, 0), radii=radii2[i], rotation_angles=rotations2[i]
+    )
+
+    # Add ellipse to plot
+    fig.add_trace(
+        go.Scatter3d(
+            x=x, y=y, z=z, mode="lines", line=dict(color="red"), name=f"Ellipse {i+1}"
+        )
+    )
+
+    # add another ellipse
+    x, y, z = generate_ellipse(
+        center=(0, 0, 0), radii=radii3[i], rotation_angles=rotations3[i]
+    )
+
+    # Add ellipse to plot
+    fig.add_trace(
+        go.Scatter3d(
+            x=x, y=y, z=z, mode="lines", line=dict(color="green"), name=f"Ellipse {i+1}"
+        )
+    )
+
+
+# Update layout
+fig.update_layout(
+    scene=dict(xaxis_title="X Axis", yaxis_title="Y Axis", zaxis_title="Z Axis"),
+    margin=dict(l=0, r=0, b=0, t=30),
+)
+
+fig.update_layout(showlegend=False)
+# remove color_continuous_scale legend
+fig.update_layout(coloraxis_showscale=False)
+# fig.update_layout(width=800, height=650)
+
+add_hyperplane(fig, [mean_rotation] * 3, "blue", "Hyperplane 1")
+add_hyperplane(fig, [mean_rotation2] * 3, "red", "Hyperplane 2")
+add_hyperplane(fig, [mean_rotation3] * 3, "green", "Hyperplane 3")
+
+fig.show()
+
+```
+
+
+## More on K-Tensors
+
+
+![K-Tensors](frame){#fig:K-Tensors width=90%}
