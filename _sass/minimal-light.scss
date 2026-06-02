@@ -745,6 +745,27 @@ screen and (max-width: 480px) {
    Beautification enhancements
    ================================================ */
 
+/* Stats equation watermark — diagonal background across full sidebar */
+header {
+  overflow: hidden;
+}
+
+.stats-watermark {
+  position: absolute;
+  top: 150px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+}
+
+.header-content {
+  position: relative;
+  z-index: 1;
+}
+
 /* Sidebar — no card, floats clean over Vanta background */
 
 /* Section headings — gradient underline via ::after */

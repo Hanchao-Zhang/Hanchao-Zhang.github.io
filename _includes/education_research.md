@@ -10,8 +10,8 @@
     <div class="timeline-entry">
       <div class="year-circle">2024</div>
       <div class="entry-content">
-        <h3><i class="fas fa-graduation-cap"></i> New York University</h3>
-        <div>Ph.D. in Biostatistics</div>
+        <h3><i class="fas fa-graduation-cap"></i> <a href="https://www.nyu.edu/" target="_blank" rel="noopener">New York University</a></h3>
+        <div>Ph.D. in Biostatistics · <a href="https://med.nyu.edu/departments-institutes/population-health/divisions-sections-centers/biostatistics/" target="_blank" rel="noopener">Dept. of Biostatistics</a></div>
       </div>
     </div>
 
@@ -19,8 +19,8 @@
     <div class="timeline-entry">
       <div class="year-circle">2023</div>
       <div class="entry-content">
-        <h3><i class="fas fa-university"></i> Columbia University</h3>
-        <div>Visiting Ph.D. Student in Statistics</div>
+        <h3><i class="fas fa-university"></i> <a href="https://www.columbia.edu/" target="_blank" rel="noopener">Columbia University</a></h3>
+        <div>Visiting Ph.D. Student in Statistics · <a href="https://stat.columbia.edu/" target="_blank" rel="noopener">Dept. of Statistics</a></div>
       </div>
     </div>
 
@@ -28,8 +28,8 @@
     <div class="timeline-entry">
       <div class="year-circle">2020</div>
       <div class="entry-content">
-        <h3><i class="fas fa-university"></i> Johns Hopkins University</h3>
-        <div>Visiting Student in Biostatistics</div>
+        <h3><i class="fas fa-university"></i> <a href="https://www.jhu.edu/" target="_blank" rel="noopener">Johns Hopkins University</a></h3>
+        <div>Visiting Student in Biostatistics · <a href="https://publichealth.jhu.edu/departments/biostatistics" target="_blank" rel="noopener">Dept. of Biostatistics</a></div>
       </div>
     </div>
 
@@ -37,8 +37,8 @@
     <div class="timeline-entry">
       <div class="year-circle">2018</div>
       <div class="entry-content">
-        <h3><i class="fas fa-graduation-cap"></i> Cornell University</h3>
-        <div>M.S. in Biostatistics and Data Science</div>
+        <h3><i class="fas fa-graduation-cap"></i> <a href="https://www.cornell.edu/" target="_blank" rel="noopener">Cornell University</a></h3>
+        <div>M.S. in Biostatistics and Data Science · <a href="https://stat.cornell.edu/" target="_blank" rel="noopener">Dept. of Statistics and Data Science</a></div>
       </div>
     </div>
 
@@ -46,8 +46,8 @@
     <div class="timeline-entry">
       <div class="year-circle">2017</div>
       <div class="entry-content">
-        <h3><i class="fas fa-graduation-cap"></i> Capital University of Economics and Business</h3>
-        <div>B.S. in International Finance</div>
+        <h3><i class="fas fa-graduation-cap"></i> <a href="https://www.cueb.edu.cn/" target="_blank" rel="noopener">Capital University of Economics and Business</a></h3>
+        <div>B.S. in International Finance · <a href="https://jrx.cueb.edu.cn" target="_blank" rel="noopener">School of Finance</a></div>
       </div>
     </div>
   </div>

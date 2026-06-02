@@ -26,6 +26,7 @@
 
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/publications.css">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&display=swap" rel="stylesheet">
 
 </head>
 
@@ -43,6 +44,32 @@
   <!-- <div class="wrapper"> -->
   
     <header>
+
+      <!-- Diagonal stats equation watermark — covers full sidebar background -->
+      <div class="stats-watermark" aria-hidden="true">
+        <svg width="100%" height="100%" viewBox="0 0 232 950" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+          <g transform="rotate(-30, 116, 475)" fill="#57068c" font-family="Caveat, cursive" font-weight="400">
+            <text x="-80" y="30"  font-size="26" opacity="0.13">β̂ = (XᵀX)⁻¹ Xᵀy</text>
+            <text x="-80" y="95"  font-size="24" opacity="0.11">∫ liminf fₙ dμ ≤ liminf ∫ fₙ dμ</text>
+            <text x="-80" y="158" font-size="27" opacity="0.13">√n (X̄ − μ)/σ →ᵈ N(0,1)</text>
+            <text x="-80" y="220" font-size="23" opacity="0.10">P(X ≥ a) ≤ E[X] / a</text>
+            <text x="-80" y="282" font-size="25" opacity="0.12">φ(E[X]) ≤ E[φ(X)]</text>
+            <text x="-80" y="344" font-size="24" opacity="0.11">Var(θ̂) ≥ 1 / I(θ)</text>
+            <text x="-80" y="406" font-size="26" opacity="0.13">lim ∫ fₙ dμ = ∫ lim fₙ dμ</text>
+            <text x="-80" y="468" font-size="23" opacity="0.10">D_KL(P ‖ Q) = Σ P log(P/Q)</text>
+            <text x="-80" y="530" font-size="25" opacity="0.12">X̄ₙ →ᵃ·ˢ· μ</text>
+            <text x="-80" y="592" font-size="24" opacity="0.11">I(θ) = −E[∂² ln f / ∂θ²]</text>
+            <text x="-80" y="654" font-size="26" opacity="0.13">P(|X−μ| ≥ kσ) ≤ 1/k²</text>
+            <text x="-80" y="716" font-size="23" opacity="0.10">E[g(X)(X−μ)] = σ² E[g′(X)]</text>
+            <text x="-80" y="778" font-size="25" opacity="0.12">L(θ) = ∏ᵢ f(xᵢ | θ)</text>
+            <text x="-80" y="840" font-size="24" opacity="0.11">σ² = Σ(xᵢ − μ)² / n</text>
+            <text x="-80" y="902" font-size="26" opacity="0.13">AIC = 2k − 2 ln(L̂)</text>
+          </g>
+        </svg>
+      </div>
+
+      <!-- All sidebar content sits above the watermark -->
+      <div class="header-content">
 
       {% if site.avatar %}
       <a class="image avatar"><img src="{{ site.avatar }}" alt="avatar" /> </a>
@@ -127,6 +154,7 @@
       </div>
       <br>
 
+      </div><!-- /.header-content -->
     </header>
     <section>
 
