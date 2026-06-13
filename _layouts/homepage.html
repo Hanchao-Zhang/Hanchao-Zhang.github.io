@@ -154,6 +154,28 @@
       </div>
       <br>
 
+      <style>
+        .beyond-link{ display:inline-flex; align-items:center; gap:7px; margin-top:4px;
+          font-family:'Caveat',cursive; font-weight:700; font-size:1.3rem; color:#57068c;
+          text-decoration:none; border-bottom:2px solid #c1352b; padding-bottom:1px;
+          transition:color .2s ease; }
+        .beyond-link:hover{ color:#9c27b0; }
+        .beyond-seal{ width:19px; height:19px; border:1.5px solid #c1352b; border-radius:3px;
+          color:#c1352b; font-size:.62rem; display:flex; align-items:center; justify-content:center;
+          transform:rotate(-5deg); font-family:"Songti SC","STSong",serif; font-weight:700; }
+        @media (prefers-color-scheme: dark){ .beyond-link{ color:#ab82c5; } }
+      </style>
+      {% if page.url == '/life.html' %}
+      <a class="beyond-link" href="{{ '/' | relative_url }}">
+        <span class="beyond-seal" aria-hidden="true">趣</span>&larr; Back to home
+      </a>
+      {% else %}
+      <a class="beyond-link" href="{{ '/life.html' | relative_url }}">
+        <span class="beyond-seal" aria-hidden="true">趣</span>Beyond Research &rarr;
+      </a>
+      {% endif %}
+      <br><br>
+
       </div><!-- /.header-content -->
     </header>
     <section>
