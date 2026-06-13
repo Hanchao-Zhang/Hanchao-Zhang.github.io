@@ -156,23 +156,18 @@
 
       <style>
         .beyond-link{ display:inline-flex; align-items:center; gap:7px; margin-top:4px;
-          font-family:'Caveat',cursive; font-weight:700; font-size:1.3rem; color:#57068c;
-          text-decoration:none; border-bottom:2px solid #c1352b; padding-bottom:1px;
-          transition:color .2s ease; }
-        .beyond-link:hover{ color:#9c27b0; }
-        .beyond-seal{ width:19px; height:19px; border:1.5px solid #c1352b; border-radius:3px;
-          color:#c1352b; font-size:.62rem; display:flex; align-items:center; justify-content:center;
-          transform:rotate(-5deg); font-family:"Songti SC","STSong",serif; font-weight:700; }
-        @media (prefers-color-scheme: dark){ .beyond-link{ color:#ab82c5; } }
+          font-size:.8rem; font-weight:600; letter-spacing:.01em; color:#fff;
+          text-decoration:none; padding:8px 18px; border-radius:22px;
+          background:linear-gradient(135deg,#57068c,#9c27b0);
+          box-shadow:0 4px 12px rgba(87,6,140,.28);
+          transition:filter .2s ease, transform .2s ease, box-shadow .2s ease; }
+        .beyond-link:hover{ filter:brightness(1.08); transform:translateY(-1px);
+          box-shadow:0 6px 16px rgba(87,6,140,.36); color:#fff; }
       </style>
       {% if page.url == '/life.html' %}
-      <a class="beyond-link" href="{{ '/' | relative_url }}">
-        <span class="beyond-seal" aria-hidden="true">趣</span>&larr; Back to home
-      </a>
+      <a class="beyond-link" href="{{ '/' | relative_url }}">&larr; Back to home</a>
       {% else %}
-      <a class="beyond-link" href="{{ '/life.html' | relative_url }}">
-        <span class="beyond-seal" aria-hidden="true">趣</span>Beyond Research &rarr;
-      </a>
+      <a class="beyond-link" href="{{ '/life.html' | relative_url }}">Beyond Research &rarr;</a>
       {% endif %}
       <br><br>
 
