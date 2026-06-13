@@ -1,7 +1,11 @@
+---
+published: false  # internal design doc — keep out of the Jekyll/GitHub Pages build
+---
+
 # Beyond Research — Personal Gallery Page
 
 **Date:** 2026-06-13
-**Status:** Design approved (pending spec review)
+**Status:** Built
 **Owner:** Hanchao Zhang
 
 ## Purpose
@@ -12,9 +16,13 @@ small, curated gallery (5 photos today), built to grow as more photos are added.
 
 ## Scope
 
-- A new standalone page at `/life/` reusing the existing sidebar layout.
+- A new standalone page at `/life.html` reusing the existing sidebar layout.
+  (Served at root level, not `/life/`, because the theme layout links its CSS/JS/avatar
+  with relative `./assets/...` paths that 404 from a nested URL — `/life.html` keeps the
+  page "directory" at root so those inherited paths resolve. No layout edit needed.)
 - A "Beyond Research" gallery with two sections: Calligraphy and Swimming.
-- Discovery links: home → `/life/` and `/life/` → home.
+- Discovery: a handwritten "趣 Beyond Research →" link in the sidebar (home → `/life.html`),
+  hidden on the page itself; a "← Back to home" link on `/life.html`.
 - **Out of scope:** a CMS, tagging/filtering, comments, or per-photo pages. YAGNI.
 
 ## Chosen Design — "Mounted Scrolls" (Demo B)
